@@ -10,6 +10,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## Create your Debian VM
 ---
 ## 🔸 1.1: In the VM
+
 ### 1. Press new
 
 ---
