@@ -9,11 +9,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 ### 🔸1. Press new
 ---
 ### 🔸2. Unattended Guest OS
+
 -	User: xalves
 	
 -	Password: debian123
 	
 -	Hostname: xalves42
+  
 ---
 ### 🔸3. Virtual machine Name and Operating System
 
@@ -30,6 +32,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
 	    
    	### Press: `Continue/Next`
+  
 ---
 ### 🔸4. Hardware
 
@@ -40,7 +43,8 @@ This document provides a complete step-by-step walkthrough to create and configu
 - Ignore the "Enable EFI" Check Box
 	
 	### Press: `Continue/Next`
-	
+
+---
 ### 🔸5. Virtual Hard Disk
  
 - Disk Size : 8.00 GB
@@ -48,9 +52,10 @@ This document provides a complete step-by-step walkthrough to create and configu
 - Ignore everything else
 	
 	### Press: `Continue/Next`
-	
+
+---
 ### 🔸6. Summary
  
- 	Check if everything is correctly setted up
+- Check if everything is correctly setted up
  	
- 	Press Finish
+ 	### Press: `Finish`
