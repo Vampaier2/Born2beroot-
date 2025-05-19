@@ -41,7 +41,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 	### Press: `Continue/Next`
 	
-### 4. 🔸Virtual Hard Disk
+### 🔸5. Virtual Hard Disk
  
 - Disk Size : 8.00 GB
    
@@ -49,7 +49,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 	### Press: `Continue/Next`
 	
-### 5. 🔸Summary
+### 🔸6. Summary
  
  	Check if everything is correctly setted up
  	
