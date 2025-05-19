@@ -59,3 +59,6 @@ This document provides a complete step-by-step walkthrough to create and configu
 - Check if everything is correctly setted up
  	
  	### Press: `Finish`
+
+
+## 🔷 In Debian 🖥️📀
