@@ -12,13 +12,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## 🔸 1.1: In the VM
 1. Press new
 
-1. Unattended Guest OS
+2. Unattended Guest OS
 
-	- user: xalves
+	- User: xalves
 	
-	- password: debian123
+	- Password: debian123
 	
-	- hostname: xalves42
+	- Hostname: xalves42
 
 
 ### 2. 🔸Virtual machine Name and Operating System
