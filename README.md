@@ -14,11 +14,9 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ### 🔸2. Unattended Guest OS
 
--	User: xalves
-	
--	Password: debian123
-	
--	Hostname: xalves42
+	- User: xalves
+	- Password: debian123
+	- Hostname: xalves42
   
 
 ### 🔸3. Virtual machine Name and Operating System
