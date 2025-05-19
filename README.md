@@ -5,7 +5,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 Download Debian link:
-[Debian Download Link]([https://github.com/](https://www.debian.org/index.pt.html)
+[Debian Download Link](https://www.debian.org/index.pt.html)
 
 
 
