@@ -63,21 +63,21 @@ Debian Instalation
  ****************************************************************************
  -> In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
  ****************************************************************************
- 	
+ ---
  2 -> Select "Install" (DO NOT SELECT "Graphical install")
- 
+ ---
  3 -> Select a Language : English
- 
+ ---
  4 -> Select your location : <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
-
+ ---
  5 -> Select : "United States - en_US.UTF-8"
- 
+ ---
  6 -> Keymap to use: "American English"
- 
+ ---
  7 -> Configure the network
 	Hostname: <your_intra_username> + "42" (example : user42)
 	Domain name: leave it blank
-	
+ ---	
  8 -> Set up users and passwords
 	Password:
 		Root password:(due to the password policy it is mandatory for your password tho have:)
@@ -95,12 +95,12 @@ Debian Instalation
 		
 		Password for your account: (i recommend the same as Root password)
 		
-		
+ ---	
  9 -> Configure the clock
  
  	Chose the clock of your timezone
  	
- 	
+ ---
  10 -> Partitions disks
 
 	Select: "Manual"
@@ -144,7 +144,7 @@ Debian Instalation
     		Then
     		Select: Done setting up the partition
 
-
+ ---
  11 -> Configuring Volumes
  
  	-> 1'st Cofiguration:
@@ -185,7 +185,7 @@ Debian Instalation
         		[ ] /dev/sda1 is de-selected
         	Then press: "Enter" to confirm selection
 
-	
+ ---
  12 -> Creating Logical Volumes
  
 	-> 1'st Creation:
@@ -241,7 +241,7 @@ Debian Instalation
     
     
 
-
+ ---
  13 -> Configuring LV's
  
  	On the menu of "Partition disks"
@@ -348,7 +348,7 @@ Debian Instalation
 	
 	Write the changes to disk?: Yes
 
-
+ ---
  14 -> Configure the package manager:
 
 	Scan extra installation media?( or it says: another CD or DVD?): No
@@ -359,24 +359,24 @@ Debian Instalation
 	
 	HTTP proxy information (blank for none): leave blank
 
-
+ ---
  15 -> Configuring popularity-contest:
  
  	Participate in the package usage survey : SAY NO TO THE SURVEY. NO!!!
  
- 
+ ---
  16 -> Software selection:
  
  	Choose software to install: ensure all items are de-selected
  	Then press: "Enter" to confirm
  
- 
+ ---
  17 -> Configuring grub-pc:
  
     	Install the GRUB boot loader to your primary driver?(or it says: the master boot record?): Yes
     	
     	Device for boot loader installation: /dev/sda (ata-VBOX_HARDDISK_xxxxxxxxxx-xxxxxxxx)
-
+ ---
  18 -> [!!] Finish the installation:
  
  	Installation complete: Continue
