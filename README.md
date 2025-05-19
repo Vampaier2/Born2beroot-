@@ -6,10 +6,10 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 ## 🔸Create your Debian VM
 ## In the VM 🖥️📀
+
+
 ---
-
 ### 1. Press new
-
 ---
 ### 2. Unattended Guest OS
 
