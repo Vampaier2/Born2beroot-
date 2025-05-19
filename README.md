@@ -35,7 +35,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 	- Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
 	    
-   	'Continue/Next'
+   	## `Continue/Next`
 
 ### 3. 🔸Hardware
 
