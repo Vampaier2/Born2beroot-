@@ -2,13 +2,11 @@
 
 This document provides a complete step-by-step walkthrough to create and configure a **Debian VM** for the **Born2beroot** project.
 
----
-
-# Debian Instalation 
 
 ---
 ## Create your Debian VM
 ---
+
 ## 🔸 1.1: In the VM
 
 ### 1. Press new
