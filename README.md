@@ -31,7 +31,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    
    	### Press: `Continue/Next`
 ---
-### 3. 🔸Hardware
+### 🔸4. Hardware
 
 - Base Memory : 1024 MB
   
