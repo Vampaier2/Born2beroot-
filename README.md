@@ -10,13 +10,12 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## Create your Debian VM
 ---
 ## 🔸 1.1: In the VM
-### 1. Press new
+1. Press new
 
-       🔸Unattended Guest OS
-
-	User - xalves
-	pass - debian123
-	hostname - xalves42
+<Unattended Guest OS>
+User - xalves
+pass - debian123
+hostname - xalves42
 
 
 ### 2. 🔸Virtual machine Name and Operating System
