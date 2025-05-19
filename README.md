@@ -9,7 +9,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 ### 🔸1. Press new
 
 ### 🔸2. Unattended Guest OS
-
+-
 	- User: xalves
 	
 	- Password: debian123
