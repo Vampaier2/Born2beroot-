@@ -12,7 +12,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## 🔸 1.1: In the VM
 1. Press new
 
-<Unattended Guest OS>
+Unattended Guest OS
 User - xalves
 pass - debian123
 hostname - xalves42
