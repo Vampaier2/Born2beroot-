@@ -4,12 +4,12 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 
-## Download Debian link:
+## 🔷Step 1: Download Debian ISO
 [debian.iso](https://www.debian.org/index.en.html)
 
 
 
-## 🔷Step 1: In the 'Oracle VM' 🖥️📀
+## 🔷Step 2: In the 'Oracle VM' 🖥️📀
 
 
 ### 🔸1. Press new
@@ -67,4 +67,4 @@ This document provides a complete step-by-step walkthrough to create and configu
  	### Press: `Finish`
 
 
-## 🔷Step 2: In Debian 🖥️📀
+## 🔷Step 3: In Debian 🖥️📀
