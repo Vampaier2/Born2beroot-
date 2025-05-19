@@ -26,7 +26,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- Name : Born2beRoot
 	- Machine Folder: home/<your_intra_username>/sgoinfre/Born2beRoot/ ( I recomend creating the "Born2beRoot" folder if it does not exist. Just for organization purposes)
 	- ISO Image : (debian.iso you instaled. Recomend putting the instaled .iso on the sgoinfre folder)
-	   - [x] "Skip Unattended Instalation" (make sure it is ticked/Yes)
+	  - [x] "Skip Unattended Instalation" (make sure it is ticked/Yes)
 	
 	Type : Linux		 |
 	Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
