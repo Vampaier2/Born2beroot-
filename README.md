@@ -4,13 +4,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 
-#Debian Instalation 
+# Debian Instalation 
 
-##---
-##Create your Debian VM
-##---
+## ---
+## Create your Debian VM
+## ---
 
-###1. Press new
+### 1. Press new
 
 	Unattended Guest OS
 
@@ -19,7 +19,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	hostname - xalves42
 
 
-###2. Virtual machine Name and Operating System
+### 2. Virtual machine Name and Operating System
 
 	Name : Born2beRoot
 	Machine Folder: home/<your_intra_username>/sgoinfre/Born2beRoot/ ( I recomend creating the "Born2beRoot" folder if it does not exist. Just for organization purposes)
@@ -31,7 +31,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    
 	Continue/Next
 
-###3. Hardware
+### 3. Hardware
 
 	Base Memory : 1024 MB
 	Processors : 1 CPU
@@ -39,14 +39,14 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 	Continue/Next
 	
-###4. Virtual Hard Disk
+### 4. Virtual Hard Disk
  
  	Disk Size : 8.00 GB
 	Ignore everything else
 	
 	Continue/Next
 	
-###5. Summary
+### 5. Summary
  
  	Check if everything is correctly setted up
  	
