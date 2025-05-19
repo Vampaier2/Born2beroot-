@@ -33,18 +33,21 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ### 3. 🔸Hardware
 
-	Base Memory : 1024 MB
-	Processors : 1 CPU
-	Ignore the "Enable EFI" Check Box
+- Base Memory : 1024 MB
+  
+- Processors : 1 CPU
+  
+- Ignore the "Enable EFI" Check Box
 	
-	Continue/Next
+	### Press: `Continue/Next`
 	
 ### 4. 🔸Virtual Hard Disk
  
- 	Disk Size : 8.00 GB
-	Ignore everything else
+- Disk Size : 8.00 GB
+   
+- Ignore everything else
 	
-	Continue/Next
+	### Press: `Continue/Next`
 	
 ### 5. 🔸Summary
  
