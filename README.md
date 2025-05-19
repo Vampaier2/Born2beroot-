@@ -3,7 +3,7 @@
 This document provides a complete step-by-step walkthrough to create and configure a **Debian VM** for the **Born2beroot** project.
 
 
-## In the 'Oracle VM' 🖥️📀
+## 🔸In the 'Oracle VM' 🖥️📀
 
 
 ### 1. Press new
