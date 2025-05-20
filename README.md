@@ -139,22 +139,20 @@ Select: "Manual"
 
 ---
 
-### **2'nd Partition:**
-	-> 2'nd Partiction:
+### _**2nd Partition:**_
 
-    		Select pri/log 8.1 GB FREE SPACE
-    		
-    		How to use this free space: Create a new partition
-    		
-    		New partition size: max
-    		
-    		Type for the new partition: Logical
-    		
-    		Select: Mount point:     /
-    		Then
-    		Select: Do not mount it
-    		Then
-    		Select: Done setting up the partition
+⬇️ Step 1: **Select:** pri/log 8.1 GB FREE SPACE  
+⬇️ Step 2: **How to use this free space:** Create a new partition  
+⬇️ Step 3: **New partition size:** max  
+⬇️ Step 4: **Type for the new partition:** Logical  
+⬇️ Step 5:
+- **Select:** Mount point: `/`
+
+  🔽 Then  
+- **Select:** Do not mount it
+
+  🔽 Then  
+- **Select:** Done setting up the partition
 
 
  11 -> Configuring Volumes
