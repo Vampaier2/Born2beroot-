@@ -70,10 +70,9 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 
-### Sellect: `Start`
+## 🔸1. Sellect: `Start`
  
----
-## 🔸1. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
+## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
  
  	
  2 -> Select "Install" (DO NOT SELECT "Graphical install")
