@@ -165,33 +165,36 @@ This document provides a complete step-by-step walkthrough to create and configu
 3. **Encryption configuration actions:** Create encrypted volumes
 	    	
 4. **Devices to encrypt: using to (space) to select/de-select, ensure that:**
-	[ ] /dev/sda1 is de-selected
-	[x] /dev/sda5 is selected
-5. **Then press:** "Enter" to confirm selection
+   
+	- [ ] /dev/sda1 is de-selected
+	- [x] /dev/sda5 is selected
+6. **Then press:** "Enter" to confirm selection
 			
-6. **Select:** Done setting up the partitions
+7. **Select:** Done setting up the partitions
 	    	
-7. **Encryption configuration actions:** Finish
+8. **Encryption configuration actions:** Finish
 	    	
-8. **Really erase the data on SCSI1 (0,0,0), partition #5 (sda)?:** Yes
+9. **Really erase the data on SCSI1 (0,0,0), partition #5 (sda)?:** Yes
 	    	
-9. **Encryption passphrase:** I personaly used the same password we used for Root password.(To avoid forgetting it)
+10. **Encryption passphrase:** I personaly used the same password we used for Root password.(To avoid forgetting it)
 
 ---
 
 ### _**2'nd Cofiguration:**_
 		
-1. Select: Configure the Logical Volume Manager
+1. **Select:** Configure the Logical Volume Manager
     		
-2. Write the changes to disks and configure LVM?: Yes
+2. **Write the changes to disks and configure LVM?:** Yes
     		
-3. LVM configuration action: Create volume group
+3. **LVM configuration action: Create volume group:**
     		
-   - Volume group name: LVMGroup
+   - **Volume group name:** LVMGroup
     		
-   - Devices for th new volume group:
-   	[*] /dev/mapper/sda5_crypt is selected
-        [ ] /dev/sda1 is de-selected
+   - **Devices for th new volume group:**
+     
+   	- [x] /dev/mapper/sda5_crypt is selected
+        - [ ] /dev/sda1 is de-selected
+   
    - Then press: "Enter" to confirm selection
 
 	
