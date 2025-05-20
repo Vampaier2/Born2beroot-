@@ -75,11 +75,11 @@ This document provides a complete step-by-step walkthrough to create and configu
  
 ## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
 
-1. Select "Install" (DO NOT SELECT "Graphical install")
+1. **Select**: "Install" (DO NOT SELECT "Graphical install")
 
-2. Select a Language: English
+2. **Select a Language**: English
 
-3. Select your location: `<select your location>`  
+3. **Select your location**: `<select your location>`  
 (mine is Portugal so I'll select: Other → Europe → Portugal)
 
 4. Select: "United States - en_US.UTF-8"
