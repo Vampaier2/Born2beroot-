@@ -5,12 +5,12 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 # 🔷Step 1: Download Debian ISO
-## 🔸1. Click here to download Debian ISO -> [debian.iso](https://www.debian.org/index.en.html)
+## 🔸1. Click here to download Debian ISO. 👉 [debian.iso](https://www.debian.org/index.en.html)
 
 # 🔷Step 2: In the 'Oracle VM' 🖥️📀
 
 
-## 🔸1. Press: `New`
+## 🔸1. 👉Press: `New`
 
 
 ## 🔸2. Unattended Guest OS
@@ -36,7 +36,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 	- Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
 	    
-   	### Press: `Continue/Next`
+   	### 👉Press: `Continue/Next`
 
 
 ## 🔸4. Hardware
@@ -47,7 +47,7 @@ This document provides a complete step-by-step walkthrough to create and configu
   
 	- Ignore the "Enable EFI" Check Box
 	
-	### Press: `Continue/Next`
+	### 👉Press: `Continue/Next`
 
 
 ## 🔸5. Virtual Hard Disk
@@ -56,14 +56,14 @@ This document provides a complete step-by-step walkthrough to create and configu
    
 	- Ignore everything else
 	
-	### Press: `Continue/Next`
+	### 👉Press: `Continue/Next`
 
 
 ## 🔸6. Summary
  
 - Check if everything is correctly setted up
  	
- 	### Press: `Finish`
+ 	### 👉Press: `Finish`
 
 ---
 ---
