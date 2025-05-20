@@ -98,9 +98,8 @@ This document provides a complete step-by-step walkthrough to create and configu
     - At least 1 lowercase character
     - At least 10 characters total
 
-  - _Due to my frustration with this project, I used:_  
-    `FUCKDEBIAn1234`  
-    _(This is for clarity; "space" confirms the password, not "enter")_
+  - Due to my frustration with this project, I used:`FUCKDEBIAn1234`  
+    _(Note: "space" confirms the password, not "enter")_
 
 - **Users:**
   - Full name for the new user: _(I recommend the intra_username)_
