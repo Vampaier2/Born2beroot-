@@ -25,17 +25,17 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 ### 🔸3. Virtual machine Name and Operating System
 
-- Name : Born2beRoot
+-	- Name : Born2beRoot
 
-- Machine Folder: home/<your_intra_username>/sgoinfre/Born2beRoot/ ( I recomend creating the "Born2beRoot" folder if it does not exist. Just for organization purposes)
+	- Machine Folder: home/<your_intra_username>/sgoinfre/Born2beRoot/ ( I recomend creating the "Born2beRoot" folder if it does not exist. Just for organization purposes)
 
-- ISO Image : (debian.iso you instaled. Recomend putting the instaled .iso on the sgoinfre folder)
+	- ISO Image : (debian.iso you instaled. Recomend putting the instaled .iso on the sgoinfre folder)
 
-	- [x] "Skip Unattended Instalation" (make sure it is ticked/Yes)
+		- [x] "Skip Unattended Instalation" (make sure it is ticked/Yes)
 	
-- Type : Linux
+	- Type : Linux
 
-- Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
+	- Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
 	    
    	### Press: `Continue/Next`
   
