@@ -14,7 +14,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 
-### 🔸2. Unattended Guest OS
+## 🔸2. Unattended Guest OS
 
 -	- User: xalves  
  
@@ -23,7 +23,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- Hostname: xalves42
   
 ---
-### 🔸3. Virtual machine Name and Operating System
+## 🔸3. Virtual machine Name and Operating System
 
 -	- Name : Born2beRoot
 
@@ -40,7 +40,7 @@ This document provides a complete step-by-step walkthrough to create and configu
    	### Press: `Continue/Next`
   
 ---
-### 🔸4. Hardware
+## 🔸4. Hardware
 
 -	- Base Memory : 1024 MB
   
@@ -51,7 +51,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	### Press: `Continue/Next`
 
 ---
-### 🔸5. Virtual Hard Disk
+## 🔸5. Virtual Hard Disk
  
 -	- Disk Size : 8.00 GB
    
@@ -60,7 +60,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	### Press: `Continue/Next`
 
 ---
-### 🔸6. Summary
+## 🔸6. Summary
  
 - Check if everything is correctly setted up
  	
@@ -68,14 +68,14 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 ---
-## 🔷Step 3: In Debian 🖥️📀
+# 🔷Step 3: In Debian 🖥️📀
 
 
 
 ### Sellect: `Start`
  
 ---
-### 🔸1. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
+## 🔸1. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
  
  	
  2 -> Select "Install" (DO NOT SELECT "Graphical install")
