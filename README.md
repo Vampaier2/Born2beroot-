@@ -136,8 +136,10 @@ Select: "Manual"
   
 	🔽 Then
 - **Select:** Done setting up the partition
-	
-	
+
+---
+
+- **2'nd Partition:**
 	-> 2'nd Partiction:
 
     		Select pri/log 8.1 GB FREE SPACE
