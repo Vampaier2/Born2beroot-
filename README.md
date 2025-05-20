@@ -119,21 +119,21 @@ Select: "Manual"
 	
 - **1'st Partiction:**
 
-	⬇️Step 1: Select: SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK
+	⬇️ Step 1: Select: SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK
 
-	⬇️Step 2: Create new empty partition table on this device?: Yes
+	⬇️ Step 2: Create new empty partition table on this device?: Yes
 
-	⬇️Step 3: Select: pri/log 8.6 GB FREE SPACE
+	⬇️ Step 3: Select: pri/log 8.6 GB FREE SPACE
 
-	⬇️Step 4: How to use this free space: Create a new partition
+	⬇️ Step 4: How to use this free space: Create a new partition
 
-	⬇️Step 5: New partition size: 500M
+	⬇️ Step 5: New partition size: 500M
 
-	⬇️Step 6: Type for the new partition: Primary
+	⬇️ Step 6: Type for the new partition: Primary
 
-	⬇️Step 7: Location for the new partition: Beginning
+	⬇️ Step 7: Location for the new partition: Beginning
 
-	⬇️Step 7: Select: Mount point:  /
+	⬇️ Step 7: Select: Mount point:  /
 		🔽 Then
 		Select: /boot - static files of the boot loader
 		🔽 Then
