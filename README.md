@@ -75,7 +75,6 @@ This document provides a complete step-by-step walkthrough to create and configu
  
 ## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
  
- 	
  2.1 Select "Install" (DO NOT SELECT "Graphical install")
  
  2.2 Select a Language : English
@@ -96,11 +95,11 @@ This document provides a complete step-by-step walkthrough to create and configu
 				- At least 1 uppercase character
 				- At least 1 lowercase character
 				- The password must be at least 10 characters long
-				
+				.
 		Due to my anger with this project i've decided to use the password: "FUCKDEBIAn1234"
 		(to show the password is 'space' not 'enter' on the check "Show Password in Clear")
 	
-	Users:
+	- Users:
 		Full name for the new user: (i recommend the intra_username)
 		
 		Username for your account: (i recommend the intra_username)
