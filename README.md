@@ -77,11 +77,11 @@ This document provides a complete step-by-step walkthrough to create and configu
  
  2.1 Select "Install" (DO NOT SELECT "Graphical install")
  
- 2.2 Select a Language : English
+ 2.2 Select a Language: English
  
- 2.3 Select your location : <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
+ 2.3 Select your location: <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
 
- 2.4 Select : "United States - en_US.UTF-8"
+ 2.4 Select: "United States - en_US.UTF-8"
  
  2.5 Keymap to use: "American English"
  
