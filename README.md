@@ -12,6 +12,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ## 🔸1. Press: `New`
 
+
 ## 🔸2. Unattended Guest OS
 
 -	- User: xalves  
@@ -36,7 +37,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- Version : Debian (64-bit)|(Usualy this 2 options are automatically disable as soon as you put the Debian 'ISO Image')
 	    
    	### Press: `Continue/Next`
-  
+
 
 ## 🔸4. Hardware
 
@@ -57,7 +58,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 	### Press: `Continue/Next`
 
----
+
 ## 🔸6. Summary
  
 - Check if everything is correctly setted up
