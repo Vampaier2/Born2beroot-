@@ -166,9 +166,9 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    	
 4. **Devices to encrypt: using to (space) to select/de-select, ensure that:**
    
-	- [ ] /dev/sda1 |is de-selected
+	- [ ] /dev/sda1 |is **de-selected**
 
-	- [x] /dev/sda5 |is selected
+	- [x] /dev/sda5 |is **selected**
 
 6. **Then press:** "Enter" to confirm selection
 			
@@ -193,10 +193,10 @@ This document provides a complete step-by-step walkthrough to create and configu
    - **Volume group name:** LVMGroup
     		
    - **Devices for th new volume group:**
-     
-   	- [x] /dev/mapper/sda5_crypt	|is selected
+
+   		- [x] /dev/mapper/sda5_crypt	|is **selected**
    
-        - [ ] /dev/sda1 		|is de-selected
+        - [ ] /dev/sda1 			|is **de-selected**
    
    - Then press: "Enter" to confirm selection
 
