@@ -166,8 +166,10 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    	
 4. **Devices to encrypt: using to (space) to select/de-select, ensure that:**
    
-	- [ ] /dev/sda1 is de-selected
-	- [x] /dev/sda5 is selected
+	- [ ] /dev/sda1 |is de-selected
+
+	- [x] /dev/sda5 |is selected
+
 6. **Then press:** "Enter" to confirm selection
 			
 7. **Select:** Done setting up the partitions
@@ -192,8 +194,9 @@ This document provides a complete step-by-step walkthrough to create and configu
     		
    - **Devices for th new volume group:**
      
-   	- [x] /dev/mapper/sda5_crypt is selected
-        - [ ] /dev/sda1 is de-selected
+   	- [x] /dev/mapper/sda5_crypt	|is selected
+   
+        - [ ] /dev/sda1 		|is de-selected
    
    - Then press: "Enter" to confirm selection
 
