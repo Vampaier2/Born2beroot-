@@ -155,7 +155,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** Done setting up the partition
 
 
- 11 -> Configuring Volumes
+ ## 🔸4. Configuring Volumes
  
  	-> 1'st Cofiguration:
  	
