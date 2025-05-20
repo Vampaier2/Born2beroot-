@@ -129,7 +129,7 @@ Select: "Manual"
 
 
 ⬇️ Step 8:
-- **Select:** Mount point:  /
+- **Select:** Mount point: `  /  `
   
 	🔽 Then
 - **Select:** /boot - static files of the boot loader
@@ -146,7 +146,7 @@ Select: "Manual"
 ⬇️ Step 3: **New partition size:** max  
 ⬇️ Step 4: **Type for the new partition:** Logical  
 ⬇️ Step 5:
-- **Select:** Mount point: `/`
+- **Select:** Mount point: `  /  `
 
   🔽 Then  
 - **Select:** Do not mount it
