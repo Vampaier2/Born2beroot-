@@ -108,12 +108,12 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 		
 		
- 8. Configure the clock
+8. Configure the clock
  
  	Chose the clock of your timezone
  	
  	
- ## 🔸3. Partitions disks
+## 🔸3. Partitions disks
 
 ### 👉 Select: `Manual`
 	
@@ -122,41 +122,42 @@ This document provides a complete step-by-step walkthrough to create and configu
 ⬇️ Step 1: **Select:** SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK  
 ⬇️ Step 2: **Create** new empty partition table on this device? → Yes  
 ⬇️ Step 3: **Select:** pri/log 8.6 GB FREE SPACE  
-⬇️ Step 4: **How to use this free space:** Create a new partition  
+⬇️ Step 4: **How to use this free space:** `Create a new partition`
 ⬇️ Step 5: **New partition size:** 500M  
 ⬇️ Step 6: **Type for the new partition:** Primary  
 ⬇️ Step 7: **Location for the new partition:** Beginning
 
 
 ⬇️ Step 8:
-- **Select:** Mount point: `  /  `
+- **Select:** `Mount point:   /  `
   
 	🔽 Then
-- **Select:** /boot - static files of the boot loader
+- **Select:** `/boot - static files of the boot loader`
   
 	🔽 Then
-- **Select:** Done setting up the partition
+- **Select:** `Done setting up the partition`
 
 ---
 
 ### _**2nd Partition:**_
 
 ⬇️ Step 1: **Select:** pri/log 8.1 GB FREE SPACE  
-⬇️ Step 2: **How to use this free space:** Create a new partition  
+⬇️ Step 2: **How to use this free space:** `Create a new partition`  
 ⬇️ Step 3: **New partition size:** max  
 ⬇️ Step 4: **Type for the new partition:** Logical  
 ⬇️ Step 5:
-- **Select:** Mount point: `  /  `
+- **Select:** `Mount point:   /  `
 
-  🔽 Then  
-- **Select:** Do not mount it
+  	🔽 Then  
+- **Select:** `Do not mount it`
 
-  🔽 Then  
-- **Select:** Done setting up the partition
+  	🔽 Then  
+- **Select:** `Done setting up the partition`
 
 
- ## 🔸4. Configuring Volumes
- ### _**1'st Cofiguration:**_
+## 🔸4. Configuring Volumes
+ 
+### _**1'st Cofiguration:**_
  	
 1. **Select:** Configure encrypted volumes
 
@@ -198,165 +199,161 @@ This document provides a complete step-by-step walkthrough to create and configu
    
         - [ ] /dev/sda1 			|is **de-selected**
    
-   - Then press: "Enter" to confirm selection
+   - **Then press:** "Enter" to confirm selection
 
 	
- 12 -> Creating Logical Volumes
- 
-	-> 1'st Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: root
-    		Logical volume size: 2G
-    	
-    	-> 2'nd Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: swap
-    		Logical volume size: 1024MB
-    		
-    	-> 3'rd Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: home
-    		Logical volume size: 1G
-	
-	-> 4'th Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: var
-    		Logical volume size: 1G
+## 🔸5. Creating Logical Volumes
 
-	-> 5'th Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: srv
-    		Logical volume size: 1G
-    		
-    	-> 6'th Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: tmp
-    		Logical volume size: 1G
-    	
-    	-> 7'th Creation:
-	
-    		LVM configuration action: Create logical volume
-    		Volume group: LVMGroup
-    		Logical volume name: var-log (yes, type only one '-' which will be automatically updated to '--')
-    		Logical volume size: 1056MB
-    		
---------------->LVM configuration action: Finish
-    
+### _**1'st Creation:**_
+- LVM configuration action: Create logical volume
+	- Volume group: LVMGroup
+	- Logical volume name: root
+	- Logical volume size: 2G
+---    	
+### _**2'nd Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** swap  
+  - **Logical volume size:** 1024MB
+---
+### _**3'rd Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** home  
+  - **Logical volume size:** 1G
+---
+### _**4'th Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** var  
+  - **Logical volume size:** 1G
+---
+### _**5'th Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** srv  
+  - **Logical volume size:** 1G
+---
+### _**6'th Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** tmp  
+  - **Logical volume size:** 1G
+---
+### _**7'th Creation:**_
+- **LVM configuration action:** Create logical volume  
+  - **Volume group:** LVMGroup  
+  - **Logical volume name:** var-log  
+    *(yes, type only one '-' which will be automatically updated to '--')*  
+  - **Logical volume size:** 1056MB
+
+      
+- **Then Select:** LVM configuration action: Finish
     
 
 
- 13 -> Configuring LV's
+## 🔸6. Configuring LV's
  
- 	On the menu of "Partition disks"
- 	
- 	-> 1'st Creation:
-		Select the line directly under the line with "LV home" in it.
-		
-		Select: Use as:         do not use
-		
-		How to use this partition:      Ext4 journaling file system
-		
-		Select: Mount point:    none
-		Then
-		Select: /home - user home directories
-		Then
-		Select: Done setting up the partition
-		
- 	-> 2'nd Configuration:
- 	
-    		Select the line directly under the line with "LV root" in it. (should be: #1 + <partition size>)
-    		
-    		Select:  Use as:    do not use
-    		
-    		How to use this partition: Ext4 journaling file system
-    		
-    		Select: Mount point:   none
-    		Then
-    		Select: / - the root file system
-    		Then
-    		Select: Done setting up the partition
+### On the menu of "Partition disks"
 
+### _**1'st Creation:**_
 
-	-> 3'rd Configuration:
-		
-		Select the line directly under the line with "LV srv" in it.
+- **Select the line directly under the line with `LV home` in it.**
 
-		Select:  Use as:    do not use
+- **Select:** `Use as:         do not use`
 
-		How to use this partition:      Ext4 journaling file system
+- **How to use this partition:**       `Ext4 journaling file system`
 
-		Select: Mount point:    none
-		Then
-		Select: /srv - data for services provided by this system
-		Then
-		Select: Done setting up the partition
+- **Select:** `Mount point:    none`
 
+	🔽 Then
+- **Select:** `/home - user home directories`
+  
+	🔽 Then
+- **Select:** `Done setting up the partition`
 
-	-> 4'th Configuration:
+---
+### _**2nd Configuration:**_
 
-		Select the line directly under the line with "LV swap" in it.
-		
-		Select: Use as:         do not use
-		
-		How to use this partition:      swap area
-		Then
-		Select: Done setting up the partition
+- **Select the line directly under the line with `LV root` in it.** (should be: #1 + <partition size>)  
+- **Select:** `Use as:    do not use`  
+- **How to use this partition:** `Ext4 journaling file system`  
+- **Select:** `Mount point:   none`  
 
-	-> 5'th Configuration:
+  🔽 Then  
+- **Select:** `/ - the root file system`  
 
-		Select the line directly under the line with "LV tmp" in it.
-		
-		Select: Use as:         do not use
-		
-		How to use this partition:      Ext4 journaling file system
-		
-		Select: Mount point:    none
-		Then
-		Select: /tmp - temporary files
-		Then
-		Select: Done setting up the partition
+  🔽 Then  
+- **Select:** `Done setting up the partition`
 
-	-> 6'th Configuration:
+---
+### _**3rd Configuration:**_
 
-		Select the line directly under the line with "LV var" in it.
-		
-		Select: Use as:         do not use
-		
-		How to use this partition:      Ext4 journaling file system
-		
-		Select: Mount point:    none
-		Then
-		Select: /var - variable data
-		Then
-		Select: Done setting up the partition
+- **Select the line directly under the line with `LV srv` in it.**  
+- **Select:** `Use as:    do not use`  
+- **How to use this partition:** `Ext4 journaling file system`  
+- **Select:** `Mount point:    none`  
 
-	-> 7'th Configuration:
+  🔽 Then  
+- **Select:** `/srv - data for services provided by this system`  
 
-		Select the line directly under the line with "LV var-log" in it.
-		
-		Select: Use as:         do not use
-		
-		How to use this partition:      Ext4 journaling file system
-		
-		Select: Mount point:    none
-		Then
-		Select: Enter manually
-		Then
-		Type: /var/log
-		Then
-		Select: Done setting up the partition
+  🔽 Then  
+- **Select:** `Done setting up the partition`
+
+---
+### _**4th Configuration:**_
+
+- **Select the line directly under the line with `LV swap` in it.**  
+- **Select:** `Use as:         do not use`  
+- **How to use this partition:** `swap area`  
+
+  🔽 Then  
+- **Select:** `Done setting up the partition`
+
+---
+### _**5th Configuration:**_
+
+- **Select the line directly under the line with `LV tmp` in it.**  
+- **Select:** `Use as:         do not use`  
+- **How to use this partition:** `Ext4 journaling file system`  
+- **Select:** `Mount point:    none`  
+
+  🔽 Then  
+- **Select:** `/tmp - temporary files`  
+
+  🔽 Then  
+- **Select:** `Done setting up the partition`
+
+---
+### _**6th Configuration:**_
+
+- **Select the line directly under the line with `LV var` in it.**  
+- **Select:** `Use as:         do not use`  
+- **How to use this partition:** `Ext4 journaling file system`  
+- **Select:** `Mount point:    none`  
+
+  🔽 Then  
+- **Select:** `/var - variable data`  
+
+  🔽 Then  
+- **Select:** `Done setting up the partition`
+
+---
+### _**7th Configuration:**_
+
+- **Select the line directly under the line with `LV var-log` in it.**  
+- **Select:** `Use as:         do not use`  
+- **How to use this partition:** `Ext4 journaling file system`  
+- **Select:** `Mount point:    none`  
+
+  🔽 Then  
+- **Select:** `Enter manually`  
+
+  🔽 Then  
+- **Type:** `/var/log`  
+
+  🔽 Then  
+- **Select:** `Done setting up the partition`
 
 	When done, Select: Finish partitioning and write changes to disk
 	(located on the bottom of the Partitions list)
