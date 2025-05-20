@@ -66,7 +66,8 @@ This document provides a complete step-by-step walkthrough to create and configu
  	
  	### Press: `Finish`
 
-
+---
+---
 ## 🔷Step 3: In Debian 🖥️📀
 
 
