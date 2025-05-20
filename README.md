@@ -117,21 +117,16 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 Select: "Manual"
 	
-- **1'st Partiction:**
+- **1st Partition:**
 
-	⬇️ Step 1: Select: SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK
+⬇️ Step 1: **Select:** SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK  
+⬇️ Step 2: **Create** new empty partition table on this device? → Yes  
+⬇️ Step 3: **Select:** pri/log 8.6 GB FREE SPACE  
+⬇️ Step 4: **How to use this free space:** Create a new partition  
+⬇️ Step 5: **New partition size:** 500M  
+⬇️ Step 6: **Type for the new partition:** Primary  
+⬇️ Step 7: **Location for the new partition:** Beginning
 
-	⬇️ Step 2: Create new empty partition table on this device?: Yes
-
-	⬇️ Step 3: Select: pri/log 8.6 GB FREE SPACE
-
-	⬇️ Step 4: How to use this free space: Create a new partition
-
-	⬇️ Step 5: New partition size: 500M
-
-	⬇️ Step 6: Type for the new partition: Primary
-
-	⬇️ Step 7: Location for the new partition: Beginning
 
 	⬇️ Step 8:
 	- Select: Mount point:  /
