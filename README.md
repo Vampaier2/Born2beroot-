@@ -108,36 +108,36 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 		
 		
- 9 -> Configure the clock
+ 8. Configure the clock
  
  	Chose the clock of your timezone
  	
  	
- 10 -> Partitions disks
+ ## 🔸3. Partitions disks
 
-	Select: "Manual"
+Select: "Manual"
 	
-	-> 1'st Partiction:
+- 1'st Partiction:
 
-		Select: SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK
+	- Select: SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK
 		
-		Create new empty partition table on this device?: Yes
+	- Create new empty partition table on this device?: Yes
 		
-		Select: pri/log 8.6 GB FREE SPACE
+	- Select: pri/log 8.6 GB FREE SPACE
 		
-		How to use this free space: Create a new partition
+	- How to use this free space: Create a new partition
 		
-		New partition size: 500M
+	- New partition size: 500M
 		
-		Type for the new partition: Primary
+	- Type for the new partition: Primary
 		
-		Location for the new partition: Beginning
+	- Location for the new partition: Beginning
 		
-		Select: Mount point:     /
-		Then
-		Select: /boot - static files of the boot loader
-		Then
-		Select: Done setting up the partition
+	- Select: Mount point:     /
+	- Then
+	- Select: /boot - static files of the boot loader
+	- Then
+	- Select: Done setting up the partition
 	
 	
 	-> 2'nd Partiction:
