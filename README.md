@@ -74,37 +74,39 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## 🔸1. Sellect: `Start`
  
 ## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
- 
- 2.1 Select "Install" (DO NOT SELECT "Graphical install")
- 
- 2.2 Select a Language: English
- 
- 2.3 Select your location: <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
 
- 2.4 Select: "United States - en_US.UTF-8"
- 
- 2.5 Keymap to use: "American English"
- 
- 2.6 Configure the network:
-	- Hostname: <your_intra_username> + "42" (example : user42)
-	- Domain name: leave it blank
-	
- 2.7 Set up users and passwords
-	- Password:
-		Root password:(due to the password policy it is mandatory for your password tho have:)
-				- At least 1 uppercase character
-				- At least 1 lowercase character
-				- The password must be at least 10 characters long
-				.
-		Due to my anger with this project i've decided to use the password: "FUCKDEBIAn1234"
-		(to show the password is 'space' not 'enter' on the check "Show Password in Clear")
-	
-	- Users:
-		Full name for the new user: (i recommend the intra_username)
-		
-		Username for your account: (i recommend the intra_username)
-		
-		Password for your account: (i recommend the same as Root password)
+2.1 Select "Install" (DO NOT SELECT "Graphical install")
+
+2.2 Select a Language: English
+
+2.3 Select your location: `<select your location>`  
+(mine is Portugal so I'll select: Other → Europe → Portugal)
+
+2.4 Select: "United States - en_US.UTF-8"
+
+2.5 Keymap to use: "American English"
+
+2.6 Configure the network:
+- **Hostname:** `<your_intra_username>` + "42" (example: `user42`)
+- **Domain name:** *(leave it blank)*
+
+2.7 Set up users and passwords:
+
+- **Password:**
+  - Root password (due to the password policy it must have):
+    - At least 1 uppercase character
+    - At least 1 lowercase character
+    - At least 10 characters total
+
+  - _Due to my frustration with this project, I used:_  
+    `FUCKDEBIAn1234`  
+    _(This is for clarity; "space" confirms the password, not "enter")_
+
+- **Users:**
+  - Full name for the new user: _(I recommend the intra_username)_
+  - Username for your account: _(same recommendation)_
+  - Password for your account: _(recommend using same as root password)_
+
 		
 		
  9 -> Configure the clock
