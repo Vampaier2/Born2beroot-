@@ -82,15 +82,15 @@ This document provides a complete step-by-step walkthrough to create and configu
 3. **Select your location**: `<select your location>`  
 (mine is Portugal so I'll select: Other → Europe → Portugal)
 
-4. Select: "United States - en_US.UTF-8"
+4. **Select**: "United States - en_US.UTF-8"
 
-5. Keymap to use: "American English"
+5. **Keymap to use**: "American English"
 
-6. Configure the network:
+6. **Configure the network**:
 - **Hostname:** `<your_intra_username>` + "42" (example: `user42`)
 - **Domain name:** *(leave it blank)*
 
-7. Set up users and passwords:
+7. **Set up users and passwords**:
 
 - **Password:**
   - Root password (due to the password policy it must have):
