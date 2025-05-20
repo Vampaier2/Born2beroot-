@@ -76,22 +76,22 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
  
  	
- 2 -> Select "Install" (DO NOT SELECT "Graphical install")
+ 2.1 Select "Install" (DO NOT SELECT "Graphical install")
  
- 3 -> Select a Language : English
+ 2.2 Select a Language : English
  
- 4 -> Select your location : <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
+ 2.3 Select your location : <select your location> (mine is Portugal so i'll select Other->Europe->Portugal)
 
- 5 -> Select : "United States - en_US.UTF-8"
+ 2.4 Select : "United States - en_US.UTF-8"
  
- 6 -> Keymap to use: "American English"
+ 2.5 Keymap to use: "American English"
  
- 7 -> Configure the network
-	Hostname: <your_intra_username> + "42" (example : user42)
-	Domain name: leave it blank
+ 2.6 Configure the network:
+	- Hostname: <your_intra_username> + "42" (example : user42)
+	- Domain name: leave it blank
 	
- 8 -> Set up users and passwords
-	Password:
+ 2.7 Set up users and passwords
+	- Password:
 		Root password:(due to the password policy it is mandatory for your password tho have:)
 				- At least 1 uppercase character
 				- At least 1 lowercase character
