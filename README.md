@@ -128,14 +128,12 @@ Select: "Manual"
 ⬇️ Step 7: **Location for the new partition:** Beginning
 
 
-	⬇️ Step 8:
-	- Select: Mount point:  /
-
+⬇️ Step 8:
+	- **Select:** Mount point:  /
 		🔽 Then
-	- Select: /boot - static files of the boot loader
-
+	- **Select:** /boot - static files of the boot loader
 		🔽 Then
-	- Select: Done setting up the partition
+	- **Select:** Done setting up the partition
 	
 	
 	-> 2'nd Partiction:
