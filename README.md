@@ -75,7 +75,7 @@ This document provides a complete step-by-step walkthrough to create and configu
  
 ## 🔸2. In the Initial Debian Menu "Debian GNU/Linux Installer menu (BIOS mode)"
 
-1. **Select**: "Install" (DO NOT SELECT "Graphical install")
+1. **Select:** "Install" (DO NOT SELECT "Graphical install")
 
 2. **Select a Language**: English
 
