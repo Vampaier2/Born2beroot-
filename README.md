@@ -273,7 +273,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**2nd Configuration:**_
+### _**2'nd Configuration:**_
 
 - **Select the line directly under the line with `LV root` in it.** (should be: #1 + <partition size>)  
 - **Select:** `Use as:    do not use`  
@@ -287,7 +287,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**3rd Configuration:**_
+### _**3'rd Configuration:**_
 
 - **Select the line directly under the line with `LV srv` in it.**  
 - **Select:** `Use as:    do not use`  
@@ -301,7 +301,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**4th Configuration:**_
+### _**4'th Configuration:**_
 
 - **Select the line directly under the line with `LV swap` in it.**  
 - **Select:** `Use as:         do not use`  
@@ -311,7 +311,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**5th Configuration:**_
+### _**5'th Configuration:**_
 
 - **Select the line directly under the line with `LV tmp` in it.**  
 - **Select:** `Use as:         do not use`  
@@ -325,7 +325,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**6th Configuration:**_
+### _**6'th Configuration:**_
 
 - **Select the line directly under the line with `LV var` in it.**  
 - **Select:** `Use as:         do not use`  
@@ -339,7 +339,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Select:** `Done setting up the partition`
 
 ---
-### _**7th Configuration:**_
+### _**7'th Configuration:**_
 
 - **Select the line directly under the line with `LV var-log` in it.**  
 - **Select:** `Use as:         do not use`  
@@ -355,40 +355,40 @@ This document provides a complete step-by-step walkthrough to create and configu
   🔽 Then  
 - **Select:** `Done setting up the partition`
 
-	When done, Select: Finish partitioning and write changes to disk
-	(located on the bottom of the Partitions list)
+---
+**When done, Select:** `Finish partitioning and write changes to disk`
+
+(located on the bottom of the Partitions list)
+
+**Write the changes to disk?:** `Yes`
+
+---
+
+## 🔸7. Configure the package manager:
+
+- **Scan extra installation media?( or it says: another CD or DVD?):** `No`
 	
-	Write the changes to disk?: Yes
-
-
- 14 -> Configure the package manager:
-
-	Scan extra installation media?( or it says: another CD or DVD?): No
+- **Debian archive mirror country:** (chose your country or closest)
 	
-	Debian archive mirror country: (chose your country or closest)
+- **Debian archive mirror:** `deb.debian.org`
 	
-	Debian archive mirror: deb.debian.org
-	
-	HTTP proxy information (blank for none): leave blank
+- **HTTP proxy information (blank for none):** `leave blank`
 
+- **Participate in the package usage survey:** `SAY NO TO THE SURVEY. NO!!!`
+ 
+ 
+## 🔸8. Software selection:
+ 
+- **Choose software to install:** ensure all items are de-selected
 
- 15 -> Configuring popularity-contest:
+- **Then press:** "Enter" to confirm 
  
- 	Participate in the package usage survey : SAY NO TO THE SURVEY. NO!!!
+## 🔸9. Configuring grub-pc:
  
- 
- 16 -> Software selection:
- 
- 	Choose software to install: ensure all items are de-selected
- 	Then press: "Enter" to confirm
- 
- 
- 17 -> Configuring grub-pc:
- 
-    	Install the GRUB boot loader to your primary driver?(or it says: the master boot record?): Yes
+- **Install the GRUB boot loader to your primary driver?(or it says: the master boot record?):** `Yes`
     	
-    	Device for boot loader installation: /dev/sda (ata-VBOX_HARDDISK_xxxxxxxxxx-xxxxxxxx)
+- **Device for boot loader installation:** `/dev/sda (ata-VBOX_HARDDISK_xxxxxxxxxx-xxxxxxxx)`
 
- 18 -> [!!] Finish the installation:
+## 🔸10. [!!] Finish the installation:
  
- 	Installation complete: Continue
+- **Installation complete:** `Continue`
