@@ -156,27 +156,26 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
  ## 🔸4. Configuring Volumes
- 
- 	-> 1'st Cofiguration:
+ ### _**1'st Cofiguration:**_
  	
-	 	Select: Configure encrypted volumes
+Select: Configure encrypted volumes
 
-	    	Write changes to disk and configure encrypted volumes?: Yes
+Write changes to disk and configure encrypted volumes?: Yes
 	    	
-	    	Encryption configuration actions: Create encrypted volumes
+Encryption configuration actions: Create encrypted volumes
 	    	
-	    	Devices to encrypt: using to (space) to select/de-select, ensure that:
-			[ ] /dev/sda1 is de-selected
-			[*] /dev/sda5 is selected
-		Then press: "Enter" to confirm selection
+Devices to encrypt: using to (space) to select/de-select, ensure that:
+	[ ] /dev/sda1 is de-selected
+	[x] /dev/sda5 is selected
+Then press: "Enter" to confirm selection
 			
-	    	Select: Done setting up the partitions
+Select: Done setting up the partitions
 	    	
-	    	Encryption configuration actions: Finish
+Encryption configuration actions: Finish
 	    	
-	    	Really erase the data on SCSI1 (0,0,0), partition #5 (sda)?: Yes
+Really erase the data on SCSI1 (0,0,0), partition #5 (sda)?: Yes
 	    	
-	    	Encryption passphrase: I personaly used the same password we used for Root password.(To avoid forgetting it)
+Encryption passphrase: I personaly used the same password we used for Root password.(To avoid forgetting it)
 
 
 	-> 2'nd Cofiguration:
