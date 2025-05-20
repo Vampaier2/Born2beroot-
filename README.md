@@ -12,6 +12,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ### 🔸1. Press new
 
+---
 ### 🔸2. Unattended Guest OS
 -
  	- User: xalves
@@ -20,7 +21,7 @@ This document provides a complete step-by-step walkthrough to create and configu
   
 	- Hostname: xalves42
   
-
+---
 ### 🔸3. Virtual machine Name and Operating System
 
 - Name : Born2beRoot
@@ -37,7 +38,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    
    	### Press: `Continue/Next`
   
-
+---
 ### 🔸4. Hardware
 
 - Base Memory : 1024 MB
