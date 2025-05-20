@@ -10,7 +10,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 # 🔷Step 2: In the 'Oracle VM' 🖥️📀
 
 
-## 🔸1. ### Press: `New`
+## 🔸1. Press: `New`
 
 ## 🔸2. Unattended Guest OS
 
