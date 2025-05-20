@@ -117,7 +117,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 Select: "Manual"
 	
-- **1st Partition:**
+### **1st Partition:**
 
 ⬇️ Step 1: **Select:** SCSI3 (0,0,0) (sda) 8.6 GB ATA VBOX HARDDISK  
 ⬇️ Step 2: **Create** new empty partition table on this device? → Yes  
@@ -139,7 +139,7 @@ Select: "Manual"
 
 ---
 
-- **2'nd Partition:**
+### **2'nd Partition:**
 	-> 2'nd Partiction:
 
     		Select pri/log 8.1 GB FREE SPACE
