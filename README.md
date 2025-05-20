@@ -115,7 +115,7 @@ This document provides a complete step-by-step walkthrough to create and configu
  	
  ## 🔸3. Partitions disks
 
-### Select: `Manual`
+### 👉 Select: `Manual`
 	
 ### _**1st Partition:**_
 
