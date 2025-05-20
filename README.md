@@ -135,8 +135,10 @@ Select: "Manual"
 
 	⬇️ Step 8:
 	- Select: Mount point:  /
+
 		🔽 Then
 	- Select: /boot - static files of the boot loader
+
 		🔽 Then
 	- Select: Done setting up the partition
 	
