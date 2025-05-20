@@ -177,22 +177,22 @@ This document provides a complete step-by-step walkthrough to create and configu
 	    	
 9. **Encryption passphrase:** I personaly used the same password we used for Root password.(To avoid forgetting it)
 
+---
 
-	-> 2'nd Cofiguration:
-	
+### _**2'nd Cofiguration:**_
 		
-    		Select: Configure the Logical Volume Manager
+1. Select: Configure the Logical Volume Manager
     		
-    		Write the changes to disks and configure LVM?: Yes
+2. Write the changes to disks and configure LVM?: Yes
     		
-    		LVM configuration action: Create volume group
+3. LVM configuration action: Create volume group
     		
-    		Volume group name: LVMGroup
+   - Volume group name: LVMGroup
     		
-    		Devices for th new volume group:
-        		[*] /dev/mapper/sda5_crypt is selected
-        		[ ] /dev/sda1 is de-selected
-        	Then press: "Enter" to confirm selection
+   - Devices for th new volume group:
+   	[*] /dev/mapper/sda5_crypt is selected
+        [ ] /dev/sda1 is de-selected
+   - Then press: "Enter" to confirm selection
 
 	
  12 -> Creating Logical Volumes
