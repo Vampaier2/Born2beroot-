@@ -390,5 +390,135 @@ This document provides a complete step-by-step walkthrough to create and configu
 - **Device for boot loader installation:** `/dev/sda (ata-VBOX_HARDDISK_xxxxxxxxxx-xxxxxxxx)`
 
 ## 🔸10. [!!] Finish the installation:
+
+
+---
+---
+---
+
+Vim tips:
+	i -> insert mode
+	esc -> exit insert mode
+	:wq -> save and exit Vim
+	/<word> -> searches for the word (AKA Ctr+F)
  
+ 
+ 
+ - First things to setup and sudo install
+
+    - lsblkon terminal to see partitions
+    - login as root or use 'su -' to enter as root
+    - apt-get update -y
+    - apt-get upgrade -y
+    - apt-get install sudo
+    - sudo apt-get install git
+    - sudo apt-get install vim
+
+ 	
+ 	
+ - Connect to SSH
+
+    - sudo apt-get install openssh-server
+    - sudo systemctl status ssh or sudo service sshd status to check status
+    - sudo vim /etc/ssh/sshd_config
+    - Remove comment from #Port22 and change it to Port4242
+    - Recome comment from '#PermitRootLogin prohibit-password' and change it to 'PermitRootLogin no'
+    - sudo systemctl restart ssh to restart ssh after the changes
+
+
+
+ - Install UFW (Uncomplicated Firewall)
+
+    - sudo apt-get install ufw
+    - sudo ufw enable (to turn it on)
+    - sudo ufw disable (to turn if off)
+    - sudo ufw status numbered (show status of ufw and allowed ports)
+    - sudo ufw allow 4242 (allow port 4242)
+    - sudo ufw delete <port_number>(to delete an allowed port)
+    - sudo ufw delete allow 8080 delete everything from the allow (both instances)
+    - sudo ufw deny 8080 (deny port 8080)
+
+ 
+ 
+ - Connect to the VM via Terminal
+
+    - go to the VM Box, Settings, Network, change NAT to Bridged Adapter
+    - sudo reboot to reboot the VM
+    - in the VM use hostname -I to get your IP
+    - in the Terminal of your PC(not on the VM), type ssh <username>@<VM IP> -p 4242
+
+    
+    
+ - Arranging Groups
+
+    - use groupadd user42 (to create a group named "user42")
+    - sudo usermod -aG sudo,user42 <username> (to add your user to both groups)
+    - getent group sudo or getent group user42 (to check who is in the group)
+
+
+
+ - Creating sudo.log
+
+    - cd /var/log
+    - mkdir sudo
+    - cd sudo
+    - touch sudo.log
+    - chmod 644 sudo.log
+
+
+
+ - Password Max and Min Days
+
+    - sudo vim /etc/login.defs go to line 165, or search for PASS_MAX_DAYS
+    - set PASS_MAX_DAYS to 30 | PASS_MAX_DAYS -> Maximum number of days a password may be used.
+    - set PASS_MIN_DAYS to 2  | PASS_MIN_DAYS -> Minimum number of days allowed between password changes.
+    			    | PASS_WARN_AGE -> Number of days warning given before a password expires.
+    - use chage -M 30 <username> (apply MAX rule to the user)
+    - use chage -m 2 <username> (apply MIN rule to the user)
+    - REMEMBER TO EXECUTE BOTH COMMANDS FOR ROOT AS WELL !
+    - use chage -l <username> to check if both and root have the 30 MAX and 2 MIN set
+    - you can use passwd <username> to change your password, if you wish
+
+
+
+ - Password Quality 
+
+    - While on root do: sudo apt-get install libpam-pwquality
+    - In sudo vim /etc/pam.d/common-password you need to add a few commands after retry=3:
+    - maxrepeat=3 (maximum of 3 characters can be repeated in a row)
+    - minlen=10 (minimum 10 characters on the password)
+    - ucredit=-1 lcredit=-1 dcredit=-1 (to force at least one uppercase, lowercase and digit in password)
+    - difok=7 (password must have at least 7 different characters from last password)
+    - reject_username (no username allowed on password)
+    - enforce_for_root (add the rule to root user as well)
+    - sudo reboot to reboot the VM
+
+
+ - Sudo Visudo -----------I'm here!!!!
+
+    - use sudo visudo
+    - Gotta add a list of things, at the beginning below Defaults  secure_path
+    - Defaults  badpass_message="Wrong Password!"
+    - Defaults  passwd_tries=3
+    - Defaults  iolog_dir="/var/log/sudo"
+    - Defaults  logfile="/var/log/sudo/sudo.log"
+    - Defaults  log_input
+    - Defaults  log_output
+    - Defaults  requiretty
+    - go to the line where there is 'root  ALL=(ALL:ALL) ALL'
+    - put bellow it '<username>  ALL=(ALL:ALL) ALL'
+    - To exit and save do: Ctrl + X, Y, 'Enter'
+
+
+- Crontab
+
+    - sudo crontab -e
+    - in the first line of the file, type this: */10 * * * * bash <path to your script here>
+    - so for example, in my case */10 * * * * bash /usr/local/bin/monitoring.sh | wall
+    - I do pipe it to wall, because I don't have wall in my monitoring script
+    - Crontab has 5 fields and they refer to: (minutes) (hour) (days) (month) (day_of_the_week)
+    - */10 means in an interval of every 10 minutes. if we placed only 10, if would mean in the 10th minute of every hour
+    - This for example: 15,20,35 16 * * 0,6 means: on minute 15, 20 and 35, at 4 PM, only on sunday and saturday
+
+    wall - shows on all open termminals at the time of execution
 - **Installation complete:** `Continue`
