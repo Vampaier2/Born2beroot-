@@ -397,10 +397,10 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 
 Vim tips:
-	- i -> insert mode
-	- esc -> exit insert mode
-	- :wq -> save and exit Vim
-	- /<word> -> searches for the word (AKA Ctr+F)
+- i -> insert mode
+- esc -> exit insert mode
+- :wq -> save and exit Vim
+- /<word> -> searches for the word (AKA Ctr+F)
  
  
  
