@@ -398,71 +398,72 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ## 🔸Vim tips:
 
-- i -> insert mode
-- esc -> exit insert mode
-- :wq -> save and exit Vim
-- /<word> -> searches for the word (AKA Ctr+F)
+- `i` -> insert mode
+- `esc` -> exit insert mode
+- `:wq` -> save and exit Vim
+- `:q!` -> exit without saving
+- `/<word>` -> searches for the word (AKA `Ctr+F`)
  
  
  
 ## 🔸First things to setup and sudo install
 
-- lsblkon terminal to see partitions
-- login as root or use 'su -' to enter as root
-- apt-get update -y
-- apt-get upgrade -y
-- apt-get install sudo
-- sudo apt-get install git
-- sudo apt-get install vim
+- `lsblkon` terminal to see partitions
+- login as root or use `su -` to enter as root
+- `apt-get update -y`
+- `apt-get upgrade -y`
+- `apt-get install sudo`
+- `sudo apt-get install git`
+- `sudo apt-get install vim`
 
  	
  	
 ## 🔸Connect to SSH
 
-- sudo apt-get install openssh-server
-- sudo systemctl status ssh or sudo service sshd status to check status
-- sudo vim /etc/ssh/sshd_config
-- Remove comment from #Port22 and change it to Port4242
-- Recome comment from '#PermitRootLogin prohibit-password' and change it to 'PermitRootLogin no'
-- sudo systemctl restart ssh to restart ssh after the changes
+- `sudo apt-get install openssh-server`
+- `sudo systemctl status ssh` or `sudo service sshd status` to check status
+- `sudo vim /etc/ssh/sshd_config`
+- Remove comment from `#Port22` and change it to `Port4242`
+- Recome comment from `#PermitRootLogin prohibit-password` and change it to `PermitRootLogin no`
+- `sudo systemctl restart ssh` to restart ssh after the changes
 
 
 
 ## 🔸Install UFW (Uncomplicated Firewall)
 
-- sudo apt-get install ufw
-- sudo ufw enable (to turn it on)
-- sudo ufw disable (to turn if off)
-- sudo ufw status numbered (show status of ufw and allowed ports)
-- sudo ufw allow 4242 (allow port 4242)
-- sudo ufw delete <port_number>(to delete an allowed port)
-- sudo ufw delete allow 8080 delete everything from the allow (both instances)
-- sudo ufw deny 8080 (deny port 8080)
+- `sudo apt-get install ufw`
+- `sudo ufw enable` (to turn it on)
+- `sudo ufw disable` (to turn if off)
+- `sudo ufw status numbered` (show status of ufw and allowed ports)
+- `sudo ufw allow 4242` (allow port 4242)
+- `sudo ufw delete <port_number>`(to delete an allowed port)
+- `sudo ufw delete allow 8080` delete everything from the allow (both instances)
+- `sudo ufw deny 8080` (deny port 8080)
 
  
  
  ## 🔸Connect to the VM via Terminal
  
-- go to the VM Box, Settings, Network, change NAT to Bridged Adapter
-- sudo reboot to reboot the VM
-- in the VM use hostname -I to get your IP
-- in the Terminal of your PC(not on the VM), type ssh <username>@<VM IP> -p 4242
+- go to the VM Box, `Settings`, `Network`, change `NAT` to `Bridged Adapter`
+- `sudo reboot` to reboot the VM
+- in the VM use `hostname -I` to get your IP
+- in the Terminal of your PC(not on the VM), type `ssh <username>@<VM IP> -p 4242`
 
     
     
  ## 🔸Arranging Groups
  
-- use groupadd user42 (to create a group named "user42")
-- sudo usermod -aG sudo,user42 <username> (to add your user to both groups)
-- getent group sudo or getent group user42 (to check who is in the group)
+- use `groupadd user42` (to create a group named "user42")
+- `sudo usermod -aG sudo,user42 <username>` (to add your user to both groups)
+- `getent group sudo` or `getent group user42` (to check who is in the group)
 
  ## 🔸Creating sudo.log
  
-- cd /var/log
-- mkdir sudo
-- cd sudo
-- touch sudo.log
-- chmod 644 sudo.log
+- `cd /var/log`
+- `mkdir sudo`
+- `cd sudo`
+- `touch sudo.log`
+- `chmod 644 sudo.log`
 
 
  ## 🔸Password Max and Min Days
