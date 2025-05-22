@@ -521,3 +521,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 
     `wall` - shows on all open termminals at the time of execution
 - **Installation complete:** `Continue`
+
+
+## 🔸Monitoring script
+- first we need to install two things `sudo apt-get install bc sysstat`
+- the script need to use wall to send it to all terminals, you can use wall in your script, or pipe it to wall in the crontab
+- `cd /usr/local/bin`
+- `vim monitoring.sh`
+- `chmod 755 monitoring.sh`
+- this is my current monitoring.sh
+
