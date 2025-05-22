@@ -83,7 +83,7 @@ fi # ends the if block
 
 ctcp=$(ss | grep "tcp" | wc -l)
 printf "#Connections TCP: $ctcp %s\n" "ESTABLISHED"
-# It is used to display 'network connections'/'listening ports'.
+# It is used to display 'network connections'/'listening ports' of the 'tcp' type.
 
 usr=$(users | wc -w)
 printf "#User log: $usr\n"
