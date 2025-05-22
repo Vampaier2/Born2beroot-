@@ -511,7 +511,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ## 🔸Crontab
 
-- `sudo crontab -e`
+- `sudo crontab -e` -> allows you to edit the root user's **`cron jobs`**.
 - in the first line of the file, type this: `*/10 * * * * bash <path to your script here>`
 - so for example, in my case `*/10 * * * * bash /usr/local/bin/monitoring.sh | wall`
 - I do pipe it to `wall`, because I don't have `wall` in my monitoring script
