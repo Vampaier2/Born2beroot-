@@ -529,5 +529,5 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `cd /usr/local/bin`
 - `vim monitoring.sh`
 - `chmod 755 monitoring.sh`
-- this is my current monitoring.sh
+- this is my current [monitoring.sh](https://github.com/Vampaier2/Born2beroot-/blob/main/monitoring.sh) 
 
