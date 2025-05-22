@@ -504,7 +504,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `Defaults  log_input`
 - `Defaults  log_output`
 - `Defaults  requiretty`
-- go to the line where there is `root  ALL=(ALL:ALL) ALL`
+- go to the line where there is `root  ALL=(ALL:ALL) ALL` -> grants the **root** user permission to run any command, as any user, and from any host, without any restrictions.
 - put bellow it `<username>  ALL=(ALL:ALL) ALL`
 - To exit and save do: `Ctrl + X`, `Y`, `Enter`.
 
