@@ -408,20 +408,20 @@ This document provides a complete step-by-step walkthrough to create and configu
  
 ## 🔸First things to setup and sudo install
 
-- `lsblkon` terminal to see partitions
+- `lsblkon` terminal to see partitions -> + Shows hard disks, SSDs, USB drives, and partitions.
 - login as root or use `su -` to enter as root
-- `apt-get update -y`
-- `apt-get upgrade -y`
-- `apt-get install sudo`
-- `sudo apt-get install git`
-- `sudo apt-get install vim`
+- `apt-get update -y` -> updates the package list
+- `apt-get upgrade -y` -> upgrades all installed packages to the latest versions
+- `apt-get install sudo` -> installs the sudo package
+- `sudo apt-get install git` -> This installs Git
+- `sudo apt-get install vim` -> This installs Vim
 
  	
  	
 ## 🔸Connect to SSH
 
-- `sudo apt-get install openssh-server`
-- `sudo systemctl status ssh` or `sudo service sshd status` to check status
+- `sudo apt-get install openssh-server` -> This installs the OpenSSH server
+- `sudo systemctl status ssh` or `sudo service sshd status` to check status of ssh
 - `sudo vim /etc/ssh/sshd_config`
 - Remove comment from `#Port22` and change it to `Port4242`
 - Recome comment from `#PermitRootLogin prohibit-password` and change it to `PermitRootLogin no`
@@ -431,7 +431,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ## 🔸Install UFW (Uncomplicated Firewall)
 
-- `sudo apt-get install ufw`
+- `sudo apt-get install ufw` -> Installs UFW (Uncomplicated Firewall)
 - `sudo ufw enable` (to turn it on)
 - `sudo ufw disable` (to turn if off)
 - `sudo ufw status numbered` (show status of ufw and allowed ports)
@@ -482,7 +482,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
  ## 🔸Password Quality 
  
-- While on root do: `sudo apt-get install libpam-pwquality`
+- While on root do: `sudo apt-get install libpam-pwquality` -> Installs libpam-pwquality package, which enhances password security by enforcing strong password policies through PAM (Pluggable Authentication Modules)
 - In `sudo vim /etc/pam.d/common-password` you need to add a few commands after `retry=3:`
 - `maxrepeat=3` (maximum of 3 characters can be repeated in a row)
 - `minlen=10` (minimum 10 characters on the password)
