@@ -468,56 +468,56 @@ This document provides a complete step-by-step walkthrough to create and configu
 
  ## 🔸Password Max and Min Days
  
-- sudo vim /etc/login.defs go to line 165, or search for PASS_MAX_DAYS
-- set PASS_MAX_DAYS to 30 | PASS_MAX_DAYS -> Maximum number of days a password may be used.
-- set PASS_MIN_DAYS to 2  | PASS_MIN_DAYS -> Minimum number of days allowed between password changes.
-			| PASS_WARN_AGE -> Number of days warning given before a password expires.
-- use chage -M 30 <username> (apply MAX rule to the user)
-- use chage -m 2 <username> (apply MIN rule to the user)
+- `sudo vim /etc/login.defs` go to line 165, or search for PASS_MAX_DAYS
+- set `PASS_MAX_DAYS` to 30 | `PASS_MAX_DAYS` -> Maximum number of days a password may be used.
+- set `PASS_MIN_DAYS` to 2  | `PASS_MIN_DAYS` -> Minimum number of days allowed between password changes.
+			| `PASS_WARN_AGE` -> Number of days warning given before a password expires.
+- use `chage -M 30 <username>` (apply MAX rule to the user)
+- use `chage -m 2 <username>` (apply MIN rule to the user)
 - REMEMBER TO EXECUTE BOTH COMMANDS FOR ROOT AS WELL !
-- use chage -l <username> to check if both and root have the 30 MAX and 2 MIN set
-- you can use passwd <username> to change your password, if you wish
+- use `chage -l <username>` to check if both and root have the 30 MAX and 2 MIN set
+- you can use `passwd <username>` to change your password, if you wish.
 
 
 
  ## 🔸Password Quality 
  
-- While on root do: sudo apt-get install libpam-pwquality
-- In sudo vim /etc/pam.d/common-password you need to add a few commands after retry=3:
-- maxrepeat=3 (maximum of 3 characters can be repeated in a row)
-- minlen=10 (minimum 10 characters on the password)
-- ucredit=-1 lcredit=-1 dcredit=-1 (to force at least one uppercase, lowercase and digit in password)
-- difok=7 (password must have at least 7 different characters from last password)
-- reject_username (no username allowed on password)
-- enforce_for_root (add the rule to root user as well)
-- sudo reboot to reboot the VM
+- While on root do: `sudo apt-get install libpam-pwquality`
+- In `sudo vim /etc/pam.d/common-password` you need to add a few commands after `retry=3:`
+- `maxrepeat=3` (maximum of 3 characters can be repeated in a row)
+- `minlen=10` (minimum 10 characters on the password)
+- `ucredit=-1` lcredit=-1 dcredit=-1 (to force at least one uppercase, lowercase and digit in password)
+- `difok=7` (password must have at least 7 different characters from last password)
+- `reject_username` (no username allowed on password)
+- `enforce_for_root` (add the rule to root user as well)
+- `sudo reboot` to reboot the VM
 
 
  ## 🔸Sudo Visudo
  
-- use sudo visudo
-- Gotta add a list of things, at the beginning below Defaults  secure_path
-- Defaults  badpass_message="Wrong Password!"
-- Defaults  passwd_tries=3
-- Defaults  iolog_dir="/var/log/sudo"
-- Defaults  logfile="/var/log/sudo/sudo.log"
-- Defaults  log_input
-- Defaults  log_output
-- Defaults  requiretty
-- go to the line where there is 'root  ALL=(ALL:ALL) ALL'
-- put bellow it '<username>  ALL=(ALL:ALL) ALL'
-- To exit and save do: Ctrl + X, Y, 'Enter'
+- use `sudo visudo`
+- Gotta add a list of things, at the beginning below Defaults  `secure_path`
+- `Defaults  badpass_message="Wrong Password!"`
+- `Defaults  passwd_tries=3`
+- `Defaults  iolog_dir="/var/log/sudo"`
+- `Defaults  logfile="/var/log/sudo/sudo.log"`
+- `Defaults  log_input`
+- `Defaults  log_output`
+- `Defaults  requiretty`
+- go to the line where there is `root  ALL=(ALL:ALL) ALL`
+- put bellow it `<username>  ALL=(ALL:ALL) ALL`
+- To exit and save do: `Ctrl + X`, `Y`, `Enter`.
 
 
 ## 🔸Crontab
 
-- sudo crontab -e
-- in the first line of the file, type this: */10 * * * * bash <path to your script here>
-- so for example, in my case */10 * * * * bash /usr/local/bin/monitoring.sh | wall
-- I do pipe it to wall, because I don't have wall in my monitoring script
+- `sudo crontab -e`
+- in the first line of the file, type this: `*/10 * * * * bash <path to your script here>`
+- so for example, in my case `*/10 * * * * bash /usr/local/bin/monitoring.sh | wall`
+- I do pipe it to `wall`, because I don't have `wall` in my monitoring script
 - Crontab has 5 fields and they refer to: (minutes) (hour) (days) (month) (day_of_the_week)
-- */10 means in an interval of every 10 minutes. if we placed only 10, if would mean in the 10th minute of every hour
+- `*/10` means in an interval of **every 10 minutes**. if we placed only 10, if would mean in the 10th minute of every hour
 - This for example: 15,20,35 16 * * 0,6 means: on minute 15, 20 and 35, at 4 PM, only on sunday and saturday
 
-    wall - shows on all open termminals at the time of execution
+    `wall` - shows on all open termminals at the time of execution
 - **Installation complete:** `Continue`
