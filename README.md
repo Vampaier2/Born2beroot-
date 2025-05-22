@@ -394,7 +394,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 ---
----
+# 🔷Step 4: Inside Debian Terminal 🖥️
 
 ## 🔸Vim tips:
 
@@ -517,7 +517,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - I do pipe it to `wall`, because I don't have `wall` in my monitoring script
 - Crontab has 5 fields and they refer to: (minutes) (hour) (days) (month) (day_of_the_week)
 - `*/10` means in an interval of **every 10 minutes**. if we placed only 10, if would mean in the 10th minute of every hour
-- This for example: 15,20,35 16 * * 0,6 means: on minute 15, 20 and 35, at 4 PM, only on sunday and saturday
+- This for example: `15,20,35 16 * * 0,6` means: on minute 15, 20 and 35, at 4 PM, only on sunday and saturday
 
     `wall` - shows on all open termminals at the time of execution
 - **Installation complete:** `Continue`
