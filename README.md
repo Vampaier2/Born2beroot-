@@ -512,22 +512,24 @@ This document provides a complete step-by-step walkthrough to create and configu
 ## 🔸Crontab
 
 - `sudo crontab -e` -> allows you to edit the root user's **`cron jobs`**.
+  - **Cron Jobs** are used to automate tasks like system backups, updates, or custom scripts that need to run at specific times
 - in the first line of the file, type this: `*/10 * * * * bash <path to your script here>`
-- so for example, in my case `*/10 * * * * bash /usr/local/bin/monitoring.sh | wall`
-- I do pipe it to `wall`, because I don't have `wall` in my monitoring script
+- So in my case `*/10 * * * * bash /usr/local/bin/monitoring.sh | wall`
+  - `wall` - shows on all open termminals at the time of execution. (I do pipe `wall`, because I don't have it in my monitoring script)
 - Crontab has 5 fields and they refer to: (minutes) (hour) (days) (month) (day_of_the_week)
 - `*/10` means in an interval of **every 10 minutes**. if we placed only 10, if would mean in the 10th minute of every hour
-- This for example: `15,20,35 16 * * 0,6` means: on minute 15, 20 and 35, at 4 PM, only on sunday and saturday
 
-    `wall` - shows on all open termminals at the time of execution
+    
 - **Installation complete:** `Continue`
 
 
 ## 🔸Monitoring script
-- first we need to install two things `sudo apt-get install bc sysstat`
-- the script need to use wall to send it to all terminals, you can use wall in your script, or pipe it to wall in the crontab
+- first we need to install two things `sudo apt-get install bc sysstat` -> This command installs two tools: `bc` and `sysstat`
+  - `bc` -> A utility for performing arbitrary-precision arithmetic (performing calculations with floating-point numbers).
+  - `sysstat` -> A package that contains system monitoring tools such as sar, iostat, and mpstat for tracking system performance.
+- the script need to use `wall` to send it to all terminals, you can use wall in your script, or pipe it to wall in the crontab
 - `cd /usr/local/bin`
 - `vim monitoring.sh`
-- `chmod 755 monitoring.sh`
+- `chmod 755 monitoring.sh` -> give **`all permisions`** to the owner, and give only **`Read`** and **`Execute`** to everyone else
 - this is my current [monitoring.sh](https://github.com/Vampaier2/Born2beroot-/blob/main/monitoring.sh) 
 
