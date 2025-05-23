@@ -676,6 +676,7 @@ Extra information they might ask
 1.  O que e um TTY?
 - A TTY (short for terminal) is a text-based interface that allows you to interact with a Unix/Linux system.
 
+
 2. O que e que cada partiçao faz?
    	- **LVMGroup-root (/) (root directory)**
 		- Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
@@ -698,9 +699,13 @@ Extra information they might ask
  	- **LVMGroup-var--log (/var/log) (log files directory)**
 		- Purpose: Stores system and application log files. Isolated to prevent logs from filling up other partitions.
 
-4. Significado de TCP
+
+3. Significado de TCP
+
 - TCP is a core internet protocol that ensures reliable, ordered, and error-checked delivery of data between computers.
 
+
 4. Significado de SSH e UFW
+
 -SSH -> SSH is a protocol used to securely connect to a remote computer over a network.
 -UFW -> UFW is a user-friendly firewall tool for managing iptables on Linux.
