@@ -677,25 +677,25 @@ Extra information they might ask
 - A TTY (short for terminal) is a text-based interface that allows you to interact with a Unix/Linux system.
 
 2. O que e que cada partiçao faz?
-   	- LVMGroup-root (/) (root directory)
+   	- **LVMGroup-root (/) (root directory)**
 	Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
 
-	- LVMGroup-swap ([SWAP]) (swap space)
+	- **LVMGroup-swap ([SWAP]) (swap space)**
 	Purpose: Acts as virtual memory; used when RAM is full. Helps prevent crashes, but is slower than RAM.
 
-	- LVMGroup-home (/home) (user data directory)
+	- **LVMGroup-home (/home) (user data directory)**
 	Purpose: Stores user files, settings, and personal data. Keeps user data separate from system files.
 
-	- LVMGroup-var (/var) (variable data directory)
+	- **LVMGroup-var (/var) (variable data directory)**
 	Purpose: Stores variable files such as caches, mail spools, and logs. Grows over time.
 
-	- LVMGroup-srv (/srv) (service data directory)
+	- **LVMGroup-srv (/srv) (service data directory)**
 	Purpose: Contains data for services like web or FTP servers. Keeps server content separate from system files.
 	
- 	- LVMGroup-tmp (/tmp) (temporary files directory)
+ 	- **LVMGroup-tmp (/tmp) (temporary files directory)**
 	Purpose: Holds temporary files used by the system and applications. Usually cleared at reboot.
 	
- 	- LVMGroup-var--log (/var/log) (log files directory)
+ 	- **LVMGroup-var--log (/var/log) (log files directory)**
 	Purpose: Stores system and application log files. Isolated to prevent logs from filling up other partitions.
 
 4. Significado de TCP
