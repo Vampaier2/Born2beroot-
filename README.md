@@ -669,8 +669,9 @@ Born2beroot
 - `sudo systemctl stop cron`
 - `sudo systemctl status cron`
 
-Extra information they might ask
-O que e um tty?
-O que e que cada partiçao faz?
-Significado de TCP
-Significado de SSH e UFW
+---
+1. Extra information they might ask
+2. O que e um tty?
+3. O que e que cada partiçao faz?
+4. Significado de TCP
+5. Significado de SSH e UFW
