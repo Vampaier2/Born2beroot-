@@ -597,11 +597,11 @@ Born2beroot
 	
 6. Advantages and Disadvantages of password policy
 
-6.1. Advantages:
-- Makes the password is More Safe & harder to crack
+	6.1. Advantages:
+	- Makes the password is More Safe & harder to crack
 
-6.2. Disadvantages:
-- It makes the user have to remeber hard complex passwords(especially when managing multiple users)
+	6.2. Disadvantages:
+	- It makes the user have to remeber hard complex passwords(especially when managing multiple users)
 
 7. Explain the password policy
 
