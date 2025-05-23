@@ -664,8 +664,7 @@ Born2beroot
 
 3. Open cron and change the time to 1 minute
 - `sudo crontab  -e`
-
-(Here evaluators usualy make questions about the code on cron)
+	(Here evaluators usualy make questions about the code on cron)
 
 4. Stop cron
 - `sudo systemctl stop cron`
