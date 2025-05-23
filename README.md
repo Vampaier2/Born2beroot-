@@ -533,3 +533,102 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `chmod 755 monitoring.sh` -> give **`all permisions`** to the owner, and give only **`Read`** and **`Execute`** to everyone else
 - this is my current [monitoring.sh](https://github.com/Vampaier2/Born2beroot-/blob/main/monitoring.sh) 
 
+
+
+
+# 🔷Step 5: Evaluation ⚖️📝✍️🧐
+
+
+Born2beroot
+## 🔸Mandatory Part:
+
+1. How a virtual machine works.
+	- A virtual machine (VM) is software that runs an operating system inside another system, acting like a separate computer.
+	
+2. Their choice of operating system.
+	- I chose Debian because it is highly recommended if you are new to system administration.
+	
+3. The basic differences between Rocky and Debian.
+	- Rocky is more a system for enterprise servers.
+	- Debian is a universal OS known for stability and flexibility.
+	
+4. The purpose of virtual machines.
+	- A VM lets you run multiple isolated systems on one physical computer, improving efficiency, security, and flexibility.
+	
+5. If the evaluated student chose Debian: the difference between aptitude and apt, and what APPArmor is.
+	- `apt` -> Best for quick, everyday package management.
+	- `aptitude` -> Best for Complex package issues, dependency conflicts, interactive use.
+	- `AppArmor` -> protects your system by limiting what applications can access
+	
+6. During the defense, a script must display information every 10 minutes.
+	- `sudo crontab -e`
+
+---
+## 🔸Simple setup:
+
+1. Check that the UFW service is started with the help of the student being evaluated.
+	- `sudo ufw status` (should say Allow)
+	
+2. Check that the SSH service is started with the help of the student being evaluated.
+	- `sudo systemctl status ssh` (everything should be either enable or active)
+	
+3. Check that the chosen operating system is Debian or Rocky.
+	- `uname -a` (Shows detailes information about the system)
+
+---
+## 🔸User:
+1. Verify if the user of the student getting evaluated exists in the group "user42" & "sudo"
+	- `getent group user42`
+	- `getent group sudo`
+
+2. Make sure the users respect the password policy
+
+3. Create a new user
+	- `sudo adduser` <username>
+	(to remove is sudo userdel -r <username>)
+	
+4. Create a new group
+	- `sudo addgroup <groupname>`
+	(to remove group is 'sudo groupdel <groupname>')
+	
+
+5. Add the new user to the newgroup 
+	- `sudo adduser username groupname`
+	
+6. Advantages and Disadvantages of password policy
+
+6.1. Advantages:
+- Makes the password is More Safe & harder to crack
+
+6.2. Disadvantages:
+- It makes the user have to remeber hard complex passwords(especially when managing multiple users)
+
+7. Explain the password policy
+
+---
+## 🔸Hostname and partitions
+
+1. Check the hostname
+- `hostaname`
+2. Modify and replace the hostname to the one of the evaluator
+- `sudo hostnamectl set-hostname newhostname`
+- `sudo reboot `
+(aviso o primeiro comando pode falhar, nem sempre funciona, corre so denovo)
+3. Change the hostname back (IMPORTANTO OR ELSE CRON GETS FUCKED UP)
+4. Show the partitions
+- `lsblk`
+(Se fizeres o bonus, o avaliador pode pedir para explicar o que cada partiçao faz)
+
+---
+## 🔸Sudo
+1. Verify that sudo is installed and working.
+	- `sudo --version`
+	- `sudo echo "sudo is working"`
+	
+2. See if /var/log/sudo exists
+	- `sudo ls /var/log/sudo`
+	
+2.1 O avaliador pode pedir para ver o ficheiro sudo.log
+	- `sudo cat /var/log/sudo/sudo.log`
+
+---
