@@ -628,7 +628,7 @@ Born2beroot
 2. See if /var/log/sudo exists
 	- `sudo ls /var/log/sudo`
 	
-2.1 O avaliador pode pedir para ver o ficheiro sudo.log
+	2.1 O avaliador pode pedir para ver o ficheiro sudo.log
 
 	- `sudo cat /var/log/sudo/sudo.log`
 
