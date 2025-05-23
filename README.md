@@ -707,5 +707,5 @@ Extra information they might ask
 
 4. Significado de SSH e UFW
 
--SSH -> SSH is a protocol used to securely connect to a remote computer over a network.
--UFW -> UFW is a user-friendly firewall tool for managing iptables on Linux.
+- SSH -> SSH is a protocol used to securely connect to a remote computer over a network.
+- UFW -> UFW is a user-friendly firewall tool for managing iptables on Linux.
