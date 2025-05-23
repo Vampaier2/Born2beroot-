@@ -629,6 +629,48 @@ Born2beroot
 	- `sudo ls /var/log/sudo`
 	
 2.1 O avaliador pode pedir para ver o ficheiro sudo.log
+
 	- `sudo cat /var/log/sudo/sudo.log`
 
 ---
+## 🔸UFW/Firewalld
+1. Check if UFW is working properly
+- `sudo UFW status`
+
+2. Add a new port for 8080
+- `sudo ufw allow 8080`
+
+3. Remove the port
+- `sudo ufw delete allow 8080` (allow ou deny, depends on what status say)
+
+---
+## 🔸SSH
+1. Check if SSH was installed properly
+- `sudo systemctl status ssh`
+
+2. Login trought ssh
+- Verify the ip of your VM using `hostname -I`
+- Open a terminal on your school computer and login using `ssh <username>@<VM IP> -p 4242`
+
+3. Try logging in has root (It is supposed to not let you do that)
+
+---
+## 🔸Script Monitoring
+1. Show and explain your script
+- `vim /usr/local/bin/monitoring.sh`
+
+2. What is cron
+
+3. Open cron and change the time to 1 minute
+- `sudo crontab  -e`
+(Aqui eles normalmente perguntam o que e cada parametro do comando cron)
+
+4. Stop cron
+- `sudo systemctl stop cron`
+- `sudo systemctl status cron`
+
+Extra information they might ask
+O que e um tty?
+O que e que cada partiçao faz?
+Significado de TCP
+Significado de SSH e UFW
