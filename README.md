@@ -660,6 +660,7 @@ Born2beroot
 - `vim /usr/local/bin/monitoring.sh`
 
 2. What is cron
+- cron runs commands or scripts automatically at scheduled times or intervals.
 
 3. Open cron and change the time to 1 minute
 - `sudo crontab  -e`
