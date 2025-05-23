@@ -12,6 +12,15 @@
 
 #!/bin/bash
 
+#✅ Use 'grep' when you just need to find lines containing a certain pattern.
+#        grep -> is is a Very fast for simple search of Matching lines
+#
+#✅ Use 'awk' when you need to extract columns, calculate values, or apply complex conditions.
+#        awk -> it is Slower for complex logic but more flexible, preferably used for Field-based processing & reporting
+#   - Field-based processing means 'awk' can:
+#       - Split lines into fields
+#       - Access and manipulate those fields
+#       - Apply logic and calculations based on field content
 arch=$(uname -a)
 printf "#Architecture: $arch\n"
 # uname -a shows all the detailed information about the system
