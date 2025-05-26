@@ -4,10 +4,12 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 # 📚 Table of Contents
 
+# 📚 Table of Contents
+
 ### 🔹 Step 1: [Download Debian ISO](#step-1-download-debian-iso)
 - [Click here to download Debian ISO](#1-click-here-to-download-debian-iso)
 
-### 🔹 Step 2: [In the 'Oracle VM'](#step-2-in-the-oracle-vm)
+### 🔹 Step 2: [In the Oracle VM](#step-2-in-the-oracle-vm)
 - [Press: New](#1-press-new)  
 - [Unattended Guest OS](#2-unattended-guest-os)  
 - [Virtual machine Name and Operating System](#3-virtual-machine-name-and-operating-system)  
@@ -16,20 +18,20 @@ This document provides a complete step-by-step walkthrough to create and configu
 - [Summary](#6-summary)
 
 ### 🔹 Step 3: [In Debian](#step-3-in-debian)
-- [Sellect: Start](#1-sellect-start)  
-- [Debian GNU/Linux Installer menu (BIOS mode)](#2-in-the-initial-debian-menu-debian-gnulinux-installer-menu-bios-mode)  
-- [Partitions disks](#3-partitions-disks)  
+- [Select: Start](#1-select-start)  
+- [Debian GNU/Linux Installer menu (BIOS mode)](#2-initial-debian-menu-debian-gnulinux-installer-menu-bios-mode)  
+- [Partition Disks](#3-partitions-disks)  
 - [Configuring Volumes](#4-configuring-volumes)  
 - [Creating Logical Volumes](#5-creating-logical-volumes)  
-- [Configuring LVs](#6-configuring-lvs)  
-- [Configure the package manager](#7-configure-the-package-manager)  
-- [Software selection](#8-software-selection)  
-- [Configuring grub-pc](#9-configuring-grub-pc)  
-- [Finish the installation](#10--finish-the-installation)
+- [Configuring Logical Volumes (LVs)](#6-configuring-lvs)  
+- [Configure the Package Manager](#7-configure-the-package-manager)  
+- [Software Selection](#8-software-selection)  
+- [Configuring GRUB PC](#9-configuring-grub-pc)  
+- [Finish the Installation](#10-finish-the-installation)
 
 ### 🔹 Step 4: [Inside Debian Terminal](#step-4-inside-debian-terminal)
-- [Vim tips](#vim-tips)  
-- [First things to setup and sudo install](#first-things-to-setup-and-sudo-install)  
+- [Vim Tips](#vim-tips)  
+- [First Things to Setup and Install via Sudo](#first-things-to-setup-and-sudo-install)  
 - [Connect to SSH](#connect-to-ssh)  
 - [Install UFW (Uncomplicated Firewall)](#install-ufw-uncomplicated-firewall)  
 - [Connect to the VM via Terminal](#connect-to-the-vm-via-terminal)  
@@ -39,13 +41,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 - [Password Quality](#password-quality)  
 - [Sudo Visudo](#sudo-visudo)  
 - [Crontab](#crontab)  
-- [Monitoring script](#monitoring-script)
+- [Monitoring Script](#monitoring-script)
 
 ### 🔹 Step 5: [Evaluation](#step-5-evaluation)
 - [Mandatory Part](#mandatory-part)  
-- [Simple setup](#simple-setup)  
+- [Simple Setup](#simple-setup)  
 - [User](#user)  
-- [Hostname and partitions](#hostname-and-partitions)  
+- [Hostname and Partitions](#hostname-and-partitions)  
 - [Sudo](#sudo)  
 - [UFW/Firewalld](#ufwfirewalld)  
 - [SSH](#ssh)  
