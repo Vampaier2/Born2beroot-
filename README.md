@@ -601,7 +601,6 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 3. Create a new user
 	- `sudo adduser <username>`
- - 
 (to remove is `sudo userdel -r <username>`)
 
 (set password with policy, and ignore everything else/Just press enter)
