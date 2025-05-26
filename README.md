@@ -578,7 +578,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- `sudo crontab -e`
 
 - Remember how to connect VM with PC terminal
-[🔸 Connect to the VM via Terminal](#🔸-connect-to-the-vm-via-terminal)
+	- [Connect to the VM via Terminal](#connect-to-the-vm-via-terminal)
 ---
 ## 🔸Simple setup:
 
