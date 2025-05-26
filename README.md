@@ -16,7 +16,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 # 🔷Step 1: Download Debian ISO
 ## 🔸1. Click here to download Debian ISO. 👉 [debian.iso](https://www.debian.org/index.en.html)
 
-# 🔷Step 2: In the 'Oracle VM' 🖥️📀
+# 🔷Step 2: In the 'Oracle VM'
 
 
 ## 🔸1. 👉Press: `New`
@@ -76,7 +76,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 ---
-# 🔷Step 3: In Debian 🖥️📀
+# 🔷Step 3: In Debian
 
 
 
@@ -403,7 +403,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 ---
-# 🔷Step 4: Inside Debian Terminal 🖥️
+# 🔷Step 4: Inside Debian Terminal
 
 ## 🔸Vim tips:
 
@@ -545,7 +545,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 
-# 🔷Step 5: Evaluation ⚖️📝✍️🧐
+# 🔷Step 5: Evaluation
 
 
 Born2beroot
