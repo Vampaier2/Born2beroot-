@@ -635,7 +635,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 3. Change the hostname back (IMPORTANTO OR ELSE CRON GETS FUCKED UP)
 4. Show the partitions
 - `lsblk`
-(Se fizeres o bonus, o avaliador pode pedir para explicar o que cada partiçao faz)
+(If you did the bonus, the evaluator might ask you to explain what each partitions do. Here's a quick summary [What does each partition do?](#2-what-does-each-partition-do))
 
 ---
 ## 🔸Sudo:
