@@ -98,7 +98,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 5. **Keymap to use:** "American English"
 
 6. **Configure the network:**
-- **Hostname:** `<your_intra_username>` + "42" (example: `user42`)
+- **Hostname:** `<your_intra_username>` + "42" (example: `user42`, DELETE the DEBIAN before it)
 - **Domain name:** *(leave it blank)*
 
 7. **Set up users and passwords**:
