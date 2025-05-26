@@ -611,7 +611,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 
 5. Add the new user to the newgroup 
-	- `sudo adduser username groupname`
+	- `sudo adduser <username> <groupname>`
 	
 6. Advantages and Disadvantages of ***password policy***
 
