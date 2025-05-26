@@ -586,7 +586,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- `sudo ufw status` (should say Allow)
 	
 2. Check that the SSH service is started with the help of the student being evaluated.
-	- `sudo systemctl status ssh` (everything should be either enable or active)
+	- `sudo systemctl status ssh` (everything should be either enable or active. Press `q` to leave menu)
 	
 3. Check that the chosen operating system is Debian or Rocky.
 	- `uname -a` (Shows detailes information about the system)
