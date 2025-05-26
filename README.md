@@ -569,9 +569,9 @@ This document provides a complete step-by-step walkthrough to create and configu
 	
 5. If the evaluated student chose Debian:
 - What are the difference between `aptitude` and `apt`?
-- And what `APPArmor` is?
 	- `apt` -> Best for quick, everyday package management.
 	- `aptitude` -> Best for Complex package issues, dependency conflicts, interactive use.
+- And what `APPArmor` is?
 	- `AppArmor` -> protects your system by limiting what applications can access
 	
 7. During the defense, a script must display information every 10 minutes.
