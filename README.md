@@ -652,7 +652,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 ---
 ## 🔸UFW/Firewalld:
-1. Check if UFW is working properly
+1. Check if ufw is working properly
 - `sudo UFW status`
 
 2. Add a new port for 8080
