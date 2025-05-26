@@ -613,7 +613,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 5. Add the new user to the newgroup 
 	- `sudo adduser username groupname`
 	
-6. Advantages and Disadvantages of password policy
+6. Advantages and Disadvantages of ***password policy***
 
 	6.1. Advantages:
 	- Makes the password is More Safe & harder to crack
