@@ -567,12 +567,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 4. The purpose of virtual machines.
 	- A VM lets you run multiple isolated systems on one physical computer, improving efficiency, security, and flexibility.
 	
-5. If the evaluated student chose Debian: What are the difference between `aptitude` and `apt`, and what `APPArmor` is.
+5. If the evaluated student chose Debian:
+- What are the difference between `aptitude` and `apt`?. And what `APPArmor` is?
 	- `apt` -> Best for quick, everyday package management.
 	- `aptitude` -> Best for Complex package issues, dependency conflicts, interactive use.
 	- `AppArmor` -> protects your system by limiting what applications can access
 	
-6. During the defense, a script must display information every 10 minutes.
+7. During the defense, a script must display information every 10 minutes.
 	- `sudo crontab -e`
 
 ---
