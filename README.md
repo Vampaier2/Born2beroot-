@@ -134,6 +134,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 ⬇️ Step 2: **Create** new empty partition table on this device? → Yes  
 ⬇️ Step 3: **Select:** pri/log 8.6 GB FREE SPACE  
 ⬇️ Step 4: **How to use this free space:** `Create a new partition`
+
 ⬇️ Step 5: **New partition size:** 500M  
 ⬇️ Step 6: **Type for the new partition:** Primary  
 ⬇️ Step 7: **Location for the new partition:** Beginning
