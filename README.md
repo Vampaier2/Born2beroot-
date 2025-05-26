@@ -601,11 +601,11 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 3. Create a new user
 	- `sudo adduser` <username>
-	(to remove is sudo userdel -r <username>)
+	(to remove is `sudo userdel -r <username>`)
 	
 4. Create a new group
 	- `sudo addgroup <groupname>`
-	(to remove group is 'sudo groupdel <groupname>')
+	(to remove group is `sudo groupdel <groupname>`)
 	
 
 5. Add the new user to the newgroup 
