@@ -696,6 +696,7 @@ Extra information they might ask
 
 
 2. What does each partition do?
+What does each partition do?
    	- **LVMGroup-root (/) (root directory)**
 		- Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
 
@@ -718,7 +719,7 @@ Extra information they might ask
 		- Purpose: Stores system and application log files. Isolated to prevent logs from filling up other partitions.
 
 
-3. What does TCP stand for?
+4. What does TCP stand for?
 
 - TCP is a core internet protocol that ensures reliable, ordered, and error-checked delivery of data between computers.
 
