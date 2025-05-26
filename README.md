@@ -4,11 +4,11 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 # 📚 Table of Contents
 
-- [🔷 Step 1: Download Debian ISO](#-step-1-download-debian-iso)  
-- [🔷 Step 2: In the 'Oracle VM' 🖥️📀](#-step-2-in-the-oracle-vm-🖥️📀)  
-- [🔷 Step 3: In Debian 🖥️📀](#-step-3-in-debian-🖥️📀)  
-- [🔷 Step 4: Inside Debian Terminal 🖥️](#-step-4-inside-debian-terminal-🖥️)  
-- [🔷 Step 5: Evaluation ⚖️📝✍️🧐](#-step-5-evaluation-⚖️📝✍️🧐)
+- [🔷 Step 1: Download Debian ISO](#step-1-download-debian-iso)  
+- [🔷 Step 2: In the 'Oracle VM'](#step-2-in-the-oracle-vm)  
+- [🔷 Step 3: In Debian](#step-3-in-debian)  
+- [🔷 Step 4: Inside Debian Terminal](#step-4-inside-debian-terminal)  
+- [🔷 Step 5: Evaluation](#step-5-evaluation)
 
 
 ---
