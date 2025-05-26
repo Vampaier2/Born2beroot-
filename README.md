@@ -577,6 +577,8 @@ This document provides a complete step-by-step walkthrough to create and configu
 7. During the defense, a script must display information every 10 minutes.
 	- `sudo crontab -e`
 
+- Remember how to connect VM with PC terminal
+[🔸 Connect to the VM via Terminal](#🔸-connect-to-the-vm-via-terminal)
 ---
 ## 🔸Simple setup:
 
