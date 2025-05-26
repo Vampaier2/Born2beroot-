@@ -1,8 +1,58 @@
 # 🛠️ Born2beroot - Debian Installation Guide
 
 This document provides a complete step-by-step walkthrough to create and configure a **Debian VM** for the **Born2beroot** project.
+---
+# 📚 Table of Contents
+
+- [Step 1: Download Debian ISO](#step-1-download-debian-iso)
+  - [Click here to download Debian ISO](#1-click-here-to-download-debian-iso)
+
+- [Step 2: In the 'Oracle VM'](#step-2-in-the-oracle-vm)
+  - [Press: New](#1-press-new)
+  - [Unattended Guest OS](#2-unattended-guest-os)
+  - [Virtual machine Name and Operating System](#3-virtual-machine-name-and-operating-system)
+  - [Hardware](#4-hardware)
+  - [Virtual Hard Disk](#5-virtual-hard-disk)
+  - [Summary](#6-summary)
+
+- [Step 3: In Debian](#step-3-in-debian)
+  - [Sellect: Start](#1-sellect-start)
+  - [Debian GNU/Linux Installer menu (BIOS mode)](#2-in-the-initial-debian-menu-debian-gnulinux-installer-menu-bios-mode)
+  - [Partitions disks](#3-partitions-disks)
+  - [Configuring Volumes](#4-configuring-volumes)
+  - [Creating Logical Volumes](#5-creating-logical-volumes)
+  - [Configuring LVs](#6-configuring-lvs)
+  - [Configure the package manager](#7-configure-the-package-manager)
+  - [Software selection](#8-software-selection)
+  - [Configuring grub-pc](#9-configuring-grub-pc)
+  - [Finish the installation](#10--finish-the-installation)
+
+- [Step 4: Inside Debian Terminal](#step-4-inside-debian-terminal)
+  - [Vim tips](#vim-tips)
+  - [First things to setup and sudo install](#first-things-to-setup-and-sudo-install)
+  - [Connect to SSH](#connect-to-ssh)
+  - [Install UFW (Uncomplicated Firewall)](#install-ufw-uncomplicated-firewall)
+  - [Connect to the VM via Terminal](#connect-to-the-vm-via-terminal)
+  - [Arranging Groups](#arranging-groups)
+  - [Creating sudo.log](#creating-sudolog)
+  - [Password Max and Min Days](#password-max-and-min-days)
+  - [Password Quality](#password-quality)
+  - [Sudo Visudo](#sudo-visudo)
+  - [Crontab](#crontab)
+  - [Monitoring script](#monitoring-script)
+
+- [Step 5: Evaluation](#step-5-evaluation)
+  - [Mandatory Part](#mandatory-part)
+  - [Simple setup](#simple-setup)
+  - [User](#user)
+  - [Hostname and partitions](#hostname-and-partitions)
+  - [Sudo](#sudo)
+  - [UFW/Firewalld](#ufwfirewalld)
+  - [SSH](#ssh)
+  - [Script Monitoring](#script-monitoring)
 
 
+---
 
 # 🔷Step 1: Download Debian ISO
 ## 🔸1. Click here to download Debian ISO. 👉 [debian.iso](https://www.debian.org/index.en.html)
@@ -442,7 +492,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
  
  
- ## 🔸Connect to the VM via Terminal
+## 🔸Connect to the VM via Terminal
  
 - go to the VM Box, `Settings`, `Network`, change `NAT` to `Bridged Adapter`
 - `sudo reboot` to reboot the VM
@@ -451,13 +501,13 @@ This document provides a complete step-by-step walkthrough to create and configu
 
     
     
- ## 🔸Arranging Groups
+## 🔸Arranging Groups
  
 - use `groupadd user42` (to create a group named "user42")
 - `sudo usermod -aG sudo,user42 <username>` (to add your user to both groups)
 - `getent group sudo` or `getent group user42` (to check who is in the group)
 
- ## 🔸Creating sudo.log
+## 🔸Creating sudo.log
  
 - `cd /var/log`
 - `mkdir sudo`
@@ -466,7 +516,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `chmod 644 sudo.log`
 
 
- ## 🔸Password Max and Min Days
+## 🔸Password Max and Min Days
  
 - `sudo vim /etc/login.defs` go to line 165, or search for PASS_MAX_DAYS
 - set `PASS_MAX_DAYS` to 30 | `PASS_MAX_DAYS` -> Maximum number of days a password may be used.
@@ -480,7 +530,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 
 
 
- ## 🔸Password Quality 
+## 🔸Password Quality 
  
 - While on root do: `sudo apt-get install libpam-pwquality` -> Installs libpam-pwquality package, which enhances password security by enforcing strong password policies through PAM (Pluggable Authentication Modules)
 - In `sudo vim /etc/pam.d/common-password` you need to add a few commands after `retry=3:`
@@ -493,7 +543,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `sudo reboot` to reboot the VM
 
 
- ## 🔸Sudo Visudo
+## 🔸Sudo Visudo
  
 - use `sudo visudo`
 - Gotta add a list of things, at the beginning below Defaults  `secure_path`
@@ -606,7 +656,7 @@ Born2beroot
 7. Explain the password policy
 
 ---
-## 🔸Hostname and partitions
+## 🔸Hostname and partitions:
 
 1. Check the hostname
 - `hostaname`
@@ -620,7 +670,7 @@ Born2beroot
 (Se fizeres o bonus, o avaliador pode pedir para explicar o que cada partiçao faz)
 
 ---
-## 🔸Sudo
+## 🔸Sudo:
 1. Verify that sudo is installed and working.
 	- `sudo --version`
 	- `sudo echo "sudo is working"`
@@ -633,7 +683,7 @@ Born2beroot
 	- `sudo cat /var/log/sudo/sudo.log`
 
 ---
-## 🔸UFW/Firewalld
+## 🔸UFW/Firewalld:
 1. Check if UFW is working properly
 - `sudo UFW status`
 
@@ -644,7 +694,7 @@ Born2beroot
 - `sudo ufw delete allow 8080` (allow ou deny, depends on what status say)
 
 ---
-## 🔸SSH
+## 🔸SSH:
 1. Check if SSH was installed properly
 - `sudo systemctl status ssh`
 
@@ -655,7 +705,7 @@ Born2beroot
 3. Try logging in has root (It is supposed to not let you do that)
 
 ---
-## 🔸Script Monitoring
+## 🔸Script Monitoring:
 1. Show and explain your script
 - `vim /usr/local/bin/monitoring.sh`
 
