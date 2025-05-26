@@ -4,10 +4,10 @@ This document provides a complete step-by-step walkthrough to create and configu
 ---
 # 📚 Table of Contents
 
-- [Step 1: Download Debian ISO](#step-1-download-debian-iso)
+- Step 1: [Download Debian ISO](#step-1-download-debian-iso)
   - [Click here to download Debian ISO](#1-click-here-to-download-debian-iso)
 
-- [Step 2: In the 'Oracle VM'](#step-2-in-the-oracle-vm)
+- Step 2: [In the 'Oracle VM'](#step-2-in-the-oracle-vm)
   - [Press: New](#1-press-new)
   - [Unattended Guest OS](#2-unattended-guest-os)
   - [Virtual machine Name and Operating System](#3-virtual-machine-name-and-operating-system)
@@ -15,7 +15,7 @@ This document provides a complete step-by-step walkthrough to create and configu
   - [Virtual Hard Disk](#5-virtual-hard-disk)
   - [Summary](#6-summary)
 
-- [Step 3: In Debian](#step-3-in-debian)
+- Step 3: [In Debian](#step-3-in-debian)
   - [Sellect: Start](#1-sellect-start)
   - [Debian GNU/Linux Installer menu (BIOS mode)](#2-in-the-initial-debian-menu-debian-gnulinux-installer-menu-bios-mode)
   - [Partitions disks](#3-partitions-disks)
@@ -27,7 +27,7 @@ This document provides a complete step-by-step walkthrough to create and configu
   - [Configuring grub-pc](#9-configuring-grub-pc)
   - [Finish the installation](#10--finish-the-installation)
 
-- [Step 4: Inside Debian Terminal](#step-4-inside-debian-terminal)
+- Step 4: [Inside Debian Terminal](#step-4-inside-debian-terminal)
   - [Vim tips](#vim-tips)
   - [First things to setup and sudo install](#first-things-to-setup-and-sudo-install)
   - [Connect to SSH](#connect-to-ssh)
@@ -41,7 +41,7 @@ This document provides a complete step-by-step walkthrough to create and configu
   - [Crontab](#crontab)
   - [Monitoring script](#monitoring-script)
 
-- [Step 5: Evaluation](#step-5-evaluation)
+- Step 5: [Evaluation](#step-5-evaluation)
   - [Mandatory Part](#mandatory-part)
   - [Simple setup](#simple-setup)
   - [User](#user)
