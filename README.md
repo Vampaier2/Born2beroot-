@@ -699,26 +699,26 @@ Extra information they might ask
 2. What does each partition do?
 **LVM** stands for Logical Volume Manager. It's a system used in Linux for managing disk storage more flexibly than traditional partitioning.
 
-   	- **LVMGroup-root (/) (root directory)**
-		- Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
+- **LVMGroup-root (/) (root directory)**
+	- Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
 
-	- **LVMGroup-swap ([SWAP]) (swap space)**
-		- Purpose: Acts as virtual memory; used when RAM is full. Helps prevent crashes, but is slower than RAM.
+- **LVMGroup-swap ([SWAP]) (swap space)**
+	- Purpose: Acts as virtual memory; used when RAM is full. Helps prevent crashes, but is slower than RAM.
 
-	- **LVMGroup-home (/home) (user data directory)**
-		- Purpose: Stores user files, settings, and personal data. Keeps user data separate from system files.
+- **LVMGroup-home (/home) (user data directory)**
+	- Purpose: Stores user files, settings, and personal data. Keeps user data separate from system files.
 
-	- **LVMGroup-var (/var) (variable data directory)**
-		- Purpose: Stores variable files such as caches, mail spools, and logs. Grows over time.
+- **LVMGroup-var (/var) (variable data directory)**
+	- Purpose: Stores variable files such as caches, mail spools, and logs. Grows over time.
 
-	- **LVMGroup-srv (/srv) (service data directory)**
-		- Purpose: Contains data for services like web or FTP servers. Keeps server content separate from system files.
+- **LVMGroup-srv (/srv) (service data directory)**
+	- Purpose: Contains data for services like web or FTP servers. Keeps server content separate from system files.
 	
- 	- **LVMGroup-tmp (/tmp) (temporary files directory)**
-		- Purpose: Holds temporary files used by the system and applications. Usually cleared at reboot.
+- **LVMGroup-tmp (/tmp) (temporary files directory)**
+	- Purpose: Holds temporary files used by the system and applications. Usually cleared at reboot.
 	
- 	- **LVMGroup-var--log (/var/log) (log files directory)**
-		- Purpose: Stores system and application log files. Isolated to prevent logs from filling up other partitions.
+- **LVMGroup-var--log (/var/log) (log files directory)**
+	- Purpose: Stores system and application log files. Isolated to prevent logs from filling up other partitions.
 
 
 4. What does TCP stand for?
