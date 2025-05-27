@@ -629,7 +629,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 1. Check the hostname
 - `hostaname`
 2. Modify and replace the hostname to the one of the evaluator
-- `sudo hostnamectl set-hostname newhostname`
+- `sudo hostnamectl set-hostname <newhostname>`(this is just the name of the pc it can be anything)
 - `sudo reboot `
 (aviso o primeiro comando pode falhar, nem sempre funciona, corre so denovo)
 3. Change the hostname back (IMPORTANTO OR ELSE CRON GETS FUCKED UP)
