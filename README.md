@@ -727,3 +727,10 @@ Extra information they might ask
 
 - SSH -> SSH is a protocol used to securely connect to a remote computer over a network.
 - UFW -> UFW is a user-friendly firewall tool for managing iptables on Linux.
+
+
+
+
+
+Delivering
+- sha1sum <Born2beRoot.vdi>
