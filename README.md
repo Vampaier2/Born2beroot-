@@ -688,6 +688,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 4. Stop cron
 - `sudo systemctl stop cron`
 - `sudo systemctl status cron`
+- (to start do: `sudo systemctl start cron`)
 
 ---
 Extra information they might ask
