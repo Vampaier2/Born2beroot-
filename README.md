@@ -697,6 +697,8 @@ Extra information they might ask
 
 
 2. What does each partition do?
+**LVM** stands for Logical Volume Manager. It's a system used in Linux for managing disk storage more flexibly than traditional partitioning.
+
    	- **LVMGroup-root (/) (root directory)**
 		- Purpose: The main system partition; contains core OS files, binaries, libraries, etc.
 
