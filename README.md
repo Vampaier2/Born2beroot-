@@ -622,7 +622,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 	- It makes the user have to remeber hard complex passwords(especially when managing multiple users)
 
 7. Explain the password policy
-(to acces use: sudo vim /etc/pam.d/common-password)
+- (to acces use: sudo vim /etc/pam.d/common-password)
 ---
 ## 🔸Hostname and partitions:
 
