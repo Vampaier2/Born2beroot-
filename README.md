@@ -465,7 +465,7 @@ This document provides a complete step-by-step walkthrough to create and configu
     
 ## 🔸Arranging Groups
  
-- use `addgroup user42` (to create a group named "user42")
+- use `sudo addgroup user42` (to create a group named "user42")
 - `sudo usermod -aG sudo,user42 <username>` (to add your user to both groups)
 - `getent group sudo` or `getent group user42` (to check who is in the group)
 
