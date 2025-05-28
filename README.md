@@ -435,7 +435,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `sudo apt-get install openssh-server` -> This installs the OpenSSH server
 - `sudo systemctl status ssh` or `sudo service sshd status` to check status of ssh
 - `sudo vim /etc/ssh/sshd_config`
-- Remove comment from `#Port22` and change it to `Port4242`
+- Remove comment from `#Port22` and change it to `Port 4242`
 - Recome comment from `#PermitRootLogin prohibit-password` and change it to `PermitRootLogin no`
 - `sudo systemctl restart ssh` to restart ssh after the changes
 
