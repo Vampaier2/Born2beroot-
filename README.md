@@ -502,6 +502,8 @@ This document provides a complete step-by-step walkthrough to create and configu
 - `difok=7` (password must have at least 7 different characters from last password)
 - `reject_username` (no username allowed on password)
 - `enforce_for_root` (add the rule to root user as well)
+
+save and exit, then after it use:
 - `sudo reboot` to reboot the VM
 
 
