@@ -1,4 +1,4 @@
-# 🛠️ Born2beroot - Debian Installation Guide
+****# 🛠️ Born2beroot - Debian Installation Guide
 
 This document provides a complete step-by-step walkthrough to create and configure a **Debian VM** for the **Born2beroot** project.
 ---
@@ -420,7 +420,7 @@ This document provides a complete step-by-step walkthrough to create and configu
  
 ## 🔸First things to setup and sudo install
 
-- `lsblkon` terminal to see partitions -> + Shows hard disks, SSDs, USB drives, and partitions.
+- `lsblk` terminal to see partitions -> + Shows hard disks, SSDs, USB drives, and partitions.
 - login as root or use `su -` to enter as root
 - `apt-get update -y` -> updates the package list
 - `apt-get upgrade -y` -> upgrades all installed packages to the latest versions
