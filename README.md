@@ -938,5 +938,8 @@ The student being evaluated should explain to you simply:
 2. What "cron" is.
 - cron runs commands or scripts automatically at scheduled times or intervals.
 
-3. How the student being evaluated set up their script so that it runs every 10 minutes from when the server starts. Once the script's correct functioning has been verified, the student being evaluated should ensure that it runs every minute. You can run whatever you want to make sure the script runs with dynamic values correctly.
+3. See how the script is runing every 10 minutes.
+- sudo crontab  -e
+then
+5. Change the script so it runs every minute.
 - sudo crontab  -e
