@@ -781,38 +781,38 @@ During the defense, a script must display information every 10 minutes.
 ## Simple setup
 
 1. Ensure that the machine does not have a graphical environment at launch. 
-- ls /usr/bin/*session (if it only shows 1 it means you don't have a graphical environment so, you good 👍)
+- `ls /usr/bin/*session` (if it only shows 1 it means you don't have a graphical environment so, you good 👍)
 
 A password will be required before attempting to connect to this machine. Finally, connect with a user with the help of the student being evaluated. This user must not be root. Pay attention to the password chosen, it must follow the rules imposed in the subject.
 
 2. Check that the UFW service is started.
-- sudo systemctl status ufw
+- `sudo systemctl status ufw`
 
 3. Check that the SSH service is started.
-- sudo systemctl status ssh
+- `sudo systemctl status ssh`
 
 4. Check that the chosen operating system is Debian or Rocky.
-- uname -a
+- `uname -a`
 
 ## User
 
 1. The subject requires that a user with the login of the student being evaluated exists on the virtual machine. Check that it has been added and that it belongs to the
 "sudo" and "user42" groups.
-- getent group sudo.
-- getent group user42.
+- `getent group sudo`.
+- `getent group user42`.
 
 2. Make sure the rules imposed in the subject concerning the password policy have been put in place.
-- sudo vim /etc/pam.d/common-password
+- `sudo vim /etc/pam.d/common-password`
 
 3. First, create a new user, assign it a password of your choice, respecting the rules. 
-- (create user) sudo adduser <username> (to remove is sudo userdel -r <username>)
+- (create user) `sudo adduser <username>` (to remove is `sudo userdel -r <username>`)
 
 4. Now that you have a new user, create a group named "evaluating" in front of you and assign it to this user.
-- (create group) sudo addgroup <groupname> (to remove group is sudo groupdel <groupname>)
-- (assign user to group) sudo adduser <username> <groupname>
+- (create group) `sudo addgroup <groupname>` (to remove group is `sudo groupdel <groupname>`)
+- (assign user to group) `sudo adduser <username> <groupname>`
 
 5. Finally, check that this user belongs to the "evaluating" group.
-- getent group <created user>
+- `getent group <created user>`
 
 6. Explain the advantages and disadvantages of the password policy.
 6.1. Advantages:
@@ -825,107 +825,107 @@ A password will be required before attempting to connect to this machine. Finall
 ## Hostname and partitions
 
 1. Check that the hostname of the machine is correctly formatted as follows: login42 (login of the student being evaluated).
-- hostname
+- `hostname`
 
 2. Modify this hostname, then restart the machine.
-- sudo hostnamectl set-hostname <newhostname>(this is just the name of the pc it can be anything)
+- `sudo hostnamectl set-hostname <newhostname>`(this is just the name of the pc it can be anything)
 then
-- sudo reboot
+- `sudo reboot`
 
 3. You can now change the hostname to the original hostname you had before.
-- sudo hostnamectl set-hostname <oldhostname>(this is the name you had before)
+- `sudo hostnamectl set-hostname <oldhostname>`(this is the name you had before)
 
 4. Ask the student being evaluated how to view the partitions for this virtual machine.
-- lsblk
+- `lsblk`
 
 5. Compare the output with the example given in the subject. Please note: if the student being evaluated completes the bonuses, it will be necessary to refer to the bonus example.
 
 6. The student being evaluated should give you a brief explanation of how LVM works and what it is all about/explain partitions.
 
-- (/) (root directory)
+- `(/) (root directory)`
 	- Purpose: The main system partition, contains core OS (files, binaries, libraries, etc...)
 
-- ([SWAP]) (swap space)
+- `([SWAP]) (swap space)`
         - Purpose: Acts as virtual memory, used when RAM is full. Helps prevent crashes, but is slower than RAM.
 
-- (/home) (user data directory)
+- `(/home) (user data directory)`
         - Purpose: Stores user files, settings, and personal data. (Keeps user data separate from system files.)
 
-- (/var) (variable data directory)
+- `(/var) (variable data directory)`
         - Purpose: Stores variable files such as caches, and logs.
 
-- (/srv) (service data directory)
+- `(/srv) (service data directory)`
         - Purpose: Contains data for services like web or FTP servers. (Keeps server content separate from system files.)
 
-- (/tmp) (temporary files directory)
+- `(/tmp) (temporary files directory)`
         - Purpose: Holds temporary files. (Usually cleared at reboot.)
 
-- (/var/log) (log files directory)
+- `(/var/log) (log files directory)`
         - Purpose: Stores system and application log files.
 
 ## SUDO
 
 1. Check that the "sudo" program is properly installed on the virtual machine.
-- sudo --version
+- `sudo --version`
 
 2. The student being evaluated should now show assigning your 'new user' to the "sudo" group.
-- (assign 'new user' to group) sudo adduser <username> sudo
+- (assign 'new user' to group) `sudo adduser <username> sudo`
 
 3. Must first explain the value and operation of sudo using examples of their choice. 
-- sudo apt update (This command updates the package list, but it requires administrative privileges)
+- `sudo apt update` (This command updates the package list, but it requires administrative privileges)
 
 4. Show the implementation of the rules imposed by the subject.
-- sudo visudo
+- `sudo visudo`
 
 5. Verify that the "/var/log/sudo/" folder exists and has at least one file. 
-- sudo ls /var/log/sudo
+- `sudo ls /var/log/sudo`
 
 6. Check the contents of the files in this folder. (You should see a history of the commands used with sudo.) 
-- sudo cat /var/log/sudo/sudo.log
+- `sudo cat /var/log/sudo/sudo.log`
 
 7. Finally, try to run a command via sudo. 
-- sudo echo "sudo is working" (to test the sudo)
+- `sudo echo "sudo is working"` (to test the sudo)
 
 8. See if the file (s) in the "/var/log/sudo/" folder have been updated.
-- sudo cat /var/log/sudo/sudo.log
+- `sudo cat /var/log/sudo/sudo.log`
 
 ## UFW / Firewalld
 
 1. Check that the "UFW" (or "Firewalld" for rocky) program is properly installed on the virtual machine.
-- sudo systemctl status ufw
+- `sudo systemctl status ufw`
 
 2. Check that it is working properly.
-- sudo ufw deny 4242 (remember to switch back to 'allow': sudo ufw allow 4242)
+- `sudo ufw deny 4242` (remember to switch back to 'allow': sudo ufw allow 4242)
 
 3. The student being evaluated should provide a basic explanation of what UFW (or Firewalld) is.
 - UFW stands for 'Uncomplicated Firewall'. It is a user-friendly interface for managing a firewall in Linux.
 
 4. List the active rules in UFW. A rule must exist for port 4242.
-- sudo ufw status
+- `sudo ufw status`
 
 5. Add a new rule to open port 8080. Check that this one has been added by listing the active rules.
-- sudo ufw allow 8080 (Add a new port for 8080)
+- `sudo ufw allow 8080` (Add a new port for 8080)
 
 6. Finally, delete this new rule.
-- sudo ufw delete allow 8080 (allow ou deny, depends on what status say)
+- `sudo ufw delete allow 8080` (allow ou deny, depends on what status say)
 
 
 ## SSH
 
 1. Check that the SSH service is properly installed on the virtual machine, and Check that it is working properly.
-- sudo systemctl status ssh
+- `sudo systemctl status ssh`
 
 2. Explain basically what SSH is and the value of using it.
 - SSH or 'Secure Shell'. It is a network protocol that allows you to securely connect to another computer over a network, typically the internet.
 
 3. Verify that the SSH service only uses port 4242 in the virtual machine.
-- sudo vim /etc/ssh/sshd_config
+- `sudo vim /etc/ssh/sshd_config`
 
 4. The student being evaluated should help you use SSH in order to log in with the newly created user.
-- ssh <username>@<VM IP> -p 4242
+- `ssh <username>@<VM IP> -p 4242`
 
 5. Of course, you have to make sure that you cannot use SSH with the "root" user as stated in the subject.
-- ssh <root>@<VM IP> -p 4242
+- `ssh <root>@<VM IP> -p 4242`
 
 
 ## Script monitoring
@@ -933,13 +933,13 @@ then
 The student being evaluated should explain to you simply:
 
 1. How their script works by showing you the code.
-- vim /usr/local/bin/monitoring.sh (then explain code)
+- `vim /usr/local/bin/monitoring.sh (then explain code)`
 
 2. What "cron" is.
 - cron runs commands or scripts automatically at scheduled times or intervals.
 
 3. See how the script is runing every 10 minutes.
-- sudo crontab  -e
+- `sudo crontab  -e`
 
 4. Now change the script so it runs every minute.
-- sudo crontab  -e
+- `sudo crontab  -e`
