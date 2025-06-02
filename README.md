@@ -943,3 +943,8 @@ The student being evaluated should explain to you simply:
 
 4. Now change the script so it runs every minute.
 - `sudo crontab  -e`
+
+## Bonus
+
+Check the bonus points authorized for this project:
+- Setting up partitions is worth 2 points.
