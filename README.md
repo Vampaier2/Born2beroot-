@@ -940,6 +940,6 @@ The student being evaluated should explain to you simply:
 
 3. See how the script is runing every 10 minutes.
 - sudo crontab  -e
-then
+	🔽 Then
 5. Change the script so it runs every minute.
 - sudo crontab  -e
