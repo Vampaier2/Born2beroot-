@@ -862,3 +862,81 @@ then
 
 - (/var/log) (log files directory)
         - Purpose: Stores system and application log files.
+
+## SUDO
+
+1. Check that the "sudo" program is properly installed on the virtual machine.
+- sudo --version
+
+2. The student being evaluated should now show assigning your 'new user' to the "sudo" group.
+- (assign 'new user' to group) sudo adduser <username> sudo
+
+3. Must first explain the value and operation of sudo using examples of their choice. 
+- sudo apt update (This command updates the package list, but it requires administrative privileges)
+
+4. Show the implementation of the rules imposed by the subject.
+- sudo visudo
+
+5. Verify that the "/var/log/sudo/" folder exists and has at least one file. 
+- sudo ls /var/log/sudo
+
+6. Check the contents of the files in this folder. (You should see a history of the commands used with sudo.) 
+- sudo cat /var/log/sudo/sudo.log
+
+7. Finally, try to run a command via sudo. 
+- sudo echo "sudo is working" (to test the sudo)
+
+8. See if the file (s) in the "/var/log/sudo/" folder have been updated.
+- sudo cat /var/log/sudo/sudo.log
+
+## UFW / Firewalld
+
+1. Check that the "UFW" (or "Firewalld" for rocky) program is properly installed on the virtual machine.
+- sudo systemctl status ufw
+
+2. Check that it is working properly.
+- sudo ufw deny 4242 (remember to switch back to 'allow': sudo ufw allow 4242)
+
+3. The student being evaluated should provide a basic explanation of what UFW (or Firewalld) is.
+- UFW stands for 'Uncomplicated Firewall'. It is a user-friendly interface for managing a firewall in Linux.
+
+4. List the active rules in UFW. A rule must exist for port 4242.
+- sudo ufw status
+
+5. Add a new rule to open port 8080. Check that this one has been added by listing the active rules.
+- sudo ufw allow 8080 (Add a new port for 8080)
+
+6. Finally, delete this new rule.
+- sudo ufw delete allow 8080 (allow ou deny, depends on what status say)
+
+
+## SSH
+
+1. Check that the SSH service is properly installed on the virtual machine, and Check that it is working properly.
+- sudo systemctl status ssh
+
+2. Explain basically what SSH is and the value of using it.
+- SSH or 'Secure Shell'. It is a network protocol that allows you to securely connect to another computer over a network, typically the internet.
+
+3. Verify that the SSH service only uses port 4242 in the virtual machine.
+- sudo vim /etc/ssh/sshd_config
+
+4. The student being evaluated should help you use SSH in order to log in with the newly created user.
+- ssh <username>@<VM IP> -p 4242
+
+5. Of course, you have to make sure that you cannot use SSH with the "root" user as stated in the subject.
+- ssh <root>@<VM IP> -p 4242
+
+
+## Script monitoring
+
+The student being evaluated should explain to you simply:
+
+1. How their script works by showing you the code.
+- vim /usr/local/bin/monitoring.sh (then explain code)
+
+2. What "cron" is.
+- cron runs commands or scripts automatically at scheduled times or intervals.
+
+3. How the student being evaluated set up their script so that it runs every 10 minutes from when the server starts. Once the script's correct functioning has been verified, the student being evaluated should ensure that it runs every minute. You can run whatever you want to make sure the script runs with dynamic values correctly.
+- sudo crontab  -e
