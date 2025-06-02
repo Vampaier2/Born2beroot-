@@ -1,4 +1,4 @@
-****# 🛠️ Born2beroot - Debian Installation Guide
+# 🛠️ Born2beroot - Debian Installation Guide
 
 This document provides a complete step-by-step walkthrough to create and configure a **Debian VM** for the **Born2beroot** project.
 ---
@@ -739,3 +739,127 @@ Extra information they might ask
 
 Delivering
 - sha1sum <Born2beRoot.vdi>
+
+
+
+
+
+
+
+## General instructions
+
+Compare the "signature.txt" file with the ".vdi" file of the virtual machine.
+(A simple "diff" should allow you to compare the two signatures.)
+---
+---
+Mandatory part:
+
+## Project overview
+
+The student being evaluated should explain to you simply:
+
+1. How a virtual machine works?
+- A virtual machine (VM) is software that runs an operating system inside another system, acting like a separate computer.
+
+2. Their choice of operating system?
+- I chose Debian because it is highly recommended if you are new to system administration.
+
+3. The basic differences between Rocky and Debian?
+- Rocky is more a system for enterprise servers.
+- Debian is a universal OS known for stability and flexibility.
+
+4. The purpose of virtual machines?
+- A VM lets you run multiple isolated systems on one physical computer, improving efficiency, security, and flexibility.
+
+5. Debian: the difference between aptitude and apt?
+- apt -> Best for quick, everyday package management.
+- aptitude -> Best for Complex package issues, dependency conflicts, interactive use.
+During the defense, a script must display information every 10 minutes.
+
+6. What is APPArmor?
+- AppArmor -> protects your system by limiting what applications can access
+
+## Simple setup
+
+1. Ensure that the machine does not have a graphical environment at launch. 
+- ls /usr/bin/*session (if it only shows 1 it means you don't have a graphical environment so, you good 👍)
+
+A password will be required before attempting to connect to this machine. Finally, connect with a user with the help of the student being evaluated. This user must not be root. Pay attention to the password chosen, it must follow the rules imposed in the subject.
+
+2. Check that the UFW service is started.
+- sudo systemctl status ufw
+
+3. Check that the SSH service is started.
+- sudo systemctl status ssh
+
+4. Check that the chosen operating system is Debian or Rocky.
+- uname -a
+
+## User
+
+1. The subject requires that a user with the login of the student being evaluated exists on the virtual machine. Check that it has been added and that it belongs to the
+"sudo" and "user42" groups.
+- getent group sudo.
+- getent group user42.
+
+2. Make sure the rules imposed in the subject concerning the password policy have been put in place.
+- sudo vim /etc/pam.d/common-password
+
+3. First, create a new user, assign it a password of your choice, respecting the rules. 
+- (create user) sudo adduser <username> (to remove is sudo userdel -r <username>)
+
+4. Now that you have a new user, create a group named "evaluating" in front of you and assign it to this user.
+- (create group) sudo addgroup <groupname> (to remove group is sudo groupdel <groupname>)
+- (assign user to group) sudo adduser <username> <groupname>
+
+5. Finally, check that this user belongs to the "evaluating" group.
+- getent group <created user>
+
+6. Explain the advantages and disadvantages of the password policy.
+6.1. Advantages:
+- Makes the password is More Safe & harder to crack
+
+6.2. Disadvantages:
+- It makes the user have to remeber hard complex passwords(especially when managing multiple users)
+
+
+## Hostname and partitions
+
+1. Check that the hostname of the machine is correctly formatted as follows: login42 (login of the student being evaluated).
+- hostname
+
+2. Modify this hostname, then restart the machine.
+- sudo hostnamectl set-hostname <newhostname>(this is just the name of the pc it can be anything)
+then
+- sudo reboot
+
+3. You can now change the hostname to the original hostname you had before.
+- sudo hostnamectl set-hostname <oldhostname>(this is the name you had before)
+
+4. Ask the student being evaluated how to view the partitions for this virtual machine.
+- lsblk
+
+5. Compare the output with the example given in the subject. Please note: if the student being evaluated completes the bonuses, it will be necessary to refer to the bonus example.
+
+6. The student being evaluated should give you a brief explanation of how LVM works and what it is all about/explain partitions.
+
+- (/) (root directory)
+	- Purpose: The main system partition, contains core OS (files, binaries, libraries, etc...)
+
+- ([SWAP]) (swap space)
+        - Purpose: Acts as virtual memory, used when RAM is full. Helps prevent crashes, but is slower than RAM.
+
+- (/home) (user data directory)
+        - Purpose: Stores user files, settings, and personal data. (Keeps user data separate from system files.)
+
+- (/var) (variable data directory)
+        - Purpose: Stores variable files such as caches, and logs.
+
+- (/srv) (service data directory)
+        - Purpose: Contains data for services like web or FTP servers. (Keeps server content separate from system files.)
+
+- (/tmp) (temporary files directory)
+        - Purpose: Holds temporary files. (Usually cleared at reboot.)
+
+- (/var/log) (log files directory)
+        - Purpose: Stores system and application log files.
