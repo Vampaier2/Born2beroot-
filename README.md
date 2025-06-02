@@ -744,15 +744,14 @@ Delivering
 
 
 
-
-
+---
+---
 ## General instructions
 
 Compare the "signature.txt" file with the ".vdi" file of the virtual machine.
 (A simple "diff" should allow you to compare the two signatures.)
 ---
----
-Mandatory part:
+# Mandatory part:
 
 ## Project overview
 
