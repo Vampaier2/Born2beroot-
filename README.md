@@ -571,25 +571,25 @@ Compare the "signature.txt" file with the ".vdi" file of the virtual machine.
 The student being evaluated should explain to you simply:
 
 1. How a virtual machine works?
-- A virtual machine (VM) is software that runs an operating system inside another system, acting like a separate computer.
+- A `virtual machine (VM)` is software that runs an operating system inside another system, acting like a separate computer.
 
 2. Their choice of operating system?
-- I chose Debian because it is highly recommended if you are new to system administration.
+- I chose `Debian` because it is highly recommended if you are new to system administration.
 
 3. The basic differences between Rocky and Debian?
-- Rocky is more a system for enterprise servers.
-- Debian is a universal OS known for stability and flexibility.
+- `Rocky` is more a system for enterprise servers.
+- `Debian` is a universal OS known for stability and flexibility.
 
 4. The purpose of virtual machines?
-- A VM lets you run multiple isolated systems on one physical computer, improving efficiency, security, and flexibility.
+- A `VM` lets you run multiple isolated systems on one physical computer, improving efficiency, security, and flexibility.
 
 5. Debian: the difference between aptitude and apt?
-- apt -> Best for quick, everyday package management.
-- aptitude -> Best for Complex package issues, dependency conflicts, interactive use.
+- `apt` -> Best for quick, everyday package management.
+- `aptitude` -> Best for Complex package issues, dependency conflicts, interactive use.
 During the defense, a script must display information every 10 minutes.
 
 6. What is APPArmor?
-- AppArmor -> protects your system by limiting what applications can access
+- `AppArmor` -> protects your system by limiting what applications can access
 
 ## Simple setup
 
