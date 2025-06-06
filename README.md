@@ -498,7 +498,7 @@ This document provides a complete step-by-step walkthrough to create and configu
 - In `sudo vim /etc/pam.d/common-password` you need to add a few commands after `retry=3:`
 - `maxrepeat=3` (maximum of 3 characters can be repeated in a row)
 - `minlen=10` (minimum 10 characters on the password)
-- `ucredit=-1` lcredit=-1 dcredit=-1 (to force at least one uppercase, lowercase and digit in password)
+- `ucredit=-1` `lcredit=-1` `dcredit=-1` (to force at least one uppercase, lowercase and digit in password)
 - `difok=7` (password must have at least 7 different characters from last password)
 - `reject_username` (no username allowed on password)
 - `enforce_for_root` (add the rule to root user as well)
