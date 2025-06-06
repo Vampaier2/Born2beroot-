@@ -94,9 +94,13 @@ ctcp=$(ss | grep "tcp" | wc -l)
 printf "#Connections TCP: $ctcp %s\n" "ESTABLISHED"
 # It is used to display 'network connections'/'listening ports' of the 'tcp' type.
 
-usr=$(users | wc -w)
+usr=$(users | tr ' ' '\n' | sort | uniq | wc -w)
 printf "#User log: $usr\n"
-# counts all the users that are currently logged on the system.
+# counts all the users that are currently logged-IN the system.
+#tr ' ' '\n'	Converts space-separated names to one per line
+#sort	Sorts them alphabetically (needed for uniq)
+#uniq	Removes duplicates
+#wc -l	Counts the number of unique lines
 
 ip=$(hostname -I | awk '{print $1}')
 mac=$(ip address | grep "ether" | awk '{print $2}')
